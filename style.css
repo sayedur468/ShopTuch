@@ -81,3 +81,35 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+.hero{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.secondary{
+    background:#fff;
+    color:#2563eb;
+}
+
+.secondary:hover{
+    background:#e5e7eb;
+}
