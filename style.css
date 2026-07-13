@@ -167,3 +167,35 @@ border:none;
 border-radius:5px;
 cursor:pointer;
 }
+
+.categories{
+padding:60px 20px;
+text-align:center;
+background:#f8f9fa;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.category{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+font-size:40px;
+transition:.3s;
+cursor:pointer;
+}
+
+.category:hover{
+transform:translateY(-8px);
+}
+
+.category h3{
+margin-top:15px;
+font-size:18px;
+}
