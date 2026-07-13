@@ -1,11 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to ShopTuch!");
 
-    const buttons = document.querySelectorAll(".card button");
+const search = document.querySelector(".header-right input");
+const cards = document.querySelectorAll(".card");
 
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            alert("Product added to cart! (Demo)");
-        });
-    });
+search.addEventListener("keyup", function(){
+
+const value = search.value.toLowerCase();
+
+cards.forEach(card=>{
+
+const name = card.querySelector("h3").textContent.toLowerCase();
+
+if(name.includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+});
+
+const buttons=document.querySelectorAll(".card button");
+
+buttons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+alert("✅ Product Added to Cart");
+
+});
+
+});
+
 });
