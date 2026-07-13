@@ -1,152 +1,654 @@
+======index.html =====
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShopTuch</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ShopTuch | Premium Online Shopping - Fast Shipping & Secure Checkout</title>
+    <meta name="description" content="Discover premium electronics, smart watches, modern fashion, home essentials, and gaming gear at ShopTuch. Experience lightning fast shipping and secure checkout.">
+    <meta name="keywords" content="premium shopping, e-commerce, dropshipping, smart watches, electronics, fashion, beauty, gaming accessories, ShopTuch">
+    <meta name="author" content="ShopTuch Developer">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shoptuch.example.com/">
+    <meta property="og:title" content="ShopTuch | Premium Online Shopping">
+    <meta property="og:description" content="Shop the latest premium items on ShopTuch. Fast shipping, responsive 24/7 support, and elite product selections.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80">
 
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shoptuch.example.com/">
+    <meta property="twitter:title" content="ShopTuch | Premium Online Shopping">
+    <meta property="twitter:description" content="Shop the latest premium items on ShopTuch. Fast shipping, responsive 24/7 support, and elite product selections.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shoptuch.example.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/shopping-bag.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<header>
-
-<div class="logo">🛍️ ShopTuch</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Categories</a>
-<a href="#">Deals</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</nav>
-
-<div class="header-right">
-<input type="text" placeholder="Search products...">
-<button>🛒 Cart</button>
-</div>
-
-</header>
-
-<section class="hero">
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Shop Smarter with ShopTuch</h1>
-    <p>Top Trending Products • Fast US Shipping • Secure Checkout</p>
-
-    <div class="hero-buttons">
-      <a href="#" class="btn">Shop Now</a>
-      <a href="#" class="btn secondary">Best Deals</a>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner"></div>
     </div>
-  </div>
-</section>
-<section class="hero">
-    ...
-</section>
 
-<!-- এখানে পেস্ট করবে -->
-<section class="categories">
+    <!-- Scroll To Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-<h2>Shop by Category</h2>
+    <!-- Top Promo Bar -->
+    <div class="promo-bar">
+        <span>⚡ Flash Sale: Get 20% Off with Code: <strong>TUCH20</strong> | Free Worldwide Shipping Today Only!</span>
+    </div>
 
-<div class="category-grid">
+    <!-- Black Header & Sticky Nav -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="ShopTuch Home">
+                <span class="logo-accent">Shop</span>Tuch
+            </a>
 
-<div class="category">
-📱
-<h3>Electronics</h3>
-</div>
+            <!-- Live Search Bar -->
+            <div class="search-wrapper">
+                <form id="search-form" class="search-form" onsubmit="event.preventDefault();">
+                    <input type="text" id="product-search" placeholder="Search premium items, electronic gadgets..." aria-label="Search Products">
+                    <button type="submit" class="search-btn" aria-label="Search Submit Button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
 
-<div class="category">
-⌚
-<h3>Smart Watches</h3>
-</div>
+            <!-- Navigation Links -->
+            <nav class="desktop-nav" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="#products-hub" class="nav-link">Products</a></li>
+                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                    <li><a href="#footer" class="nav-link">About</a></li>
+                </ul>
+            </nav>
 
-<div class="category">
-🎧
-<h3>Accessories</h3>
-</div>
+            <!-- Utility Action Controls -->
+            <div class="header-actions">
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="action-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
 
-<div class="category">
-🏠
-<h3>Home & Kitchen</h3>
-</div>
-  
-</section>
+                <!-- Wishlist Icon Counter -->
+                <button id="wishlist-trigger" class="action-btn" aria-label="Open Wishlist" title="Your Wishlist">
+                    <i class="fa-solid fa-heart"></i>
+                    <span id="wishlist-badge" class="badge">0</span>
+                </button>
 
-<section class="products">
+                <!-- Cart Icon Counter -->
+                <button id="cart-trigger" class="action-btn cart-btn" aria-label="Open Cart" title="Your Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="badge">0</span>
+                </button>
 
-<h2>Featured Products</h2>
+                <!-- Mobile Navigation Toggle -->
+                <button id="mobile-menu-trigger" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<div class="grid">
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-drawer">
+        <div class="drawer-header">
+            <span class="drawer-logo"><span class="logo-accent">Shop</span>Tuch</span>
+            <button id="mobile-menu-close" class="close-drawer-btn" aria-label="Close Mobile Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="mobile-search">
+            <form id="mobile-search-form" onsubmit="event.preventDefault();">
+                <input type="text" id="mobile-search-input" placeholder="Search products..." aria-label="Search Input">
+                <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <nav class="mobile-links" aria-label="Mobile Navigation Drawer Links">
+            <a href="#" class="mobile-link-item">Home</a>
+            <a href="#categories" class="mobile-link-item">Categories</a>
+            <a href="#products-hub" class="mobile-link-item">Products</a>
+            <a href="#testimonials" class="mobile-link-item">Reviews</a>
+            <a href="#footer" class="mobile-link-item">About Us</a>
+        </nav>
+    </div>
+    <div id="drawer-overlay" class="drawer-overlay"></div>
 
-<div class="card">
+    <main>
+        <!-- Premium Hero Banner Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content scroll-anim animate-fade-up">
+                <span class="hero-tag">EXCLUSIVE DROPSHIPPING EXCELLENCE</span>
+                <h1 class="hero-headline">Premium Online Shopping</h1>
+                <p class="hero-subtitle">Best Products • Fast Shipping • Secure Checkout</p>
+                <div class="hero-actions-container">
+                    <a href="#products-hub" class="btn btn-primary">Shop Now <i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="#categories" class="btn btn-outline">Explore <i class="fa-solid fa-compass"></i></a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <span class="stat-num">50K+</span>
+                    <span class="stat-text">Happy Customers</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">24h</span>
+                    <span class="stat-text">Express Dispatch</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">4.9★</span>
+                    <span class="stat-text">Verified Reviews</span>
+                </div>
+            </div>
+        </section>
 
-<span class="badge">-30%</span>
+        <!-- Categories Section -->
+        <section class="categories-section" id="categories">
+            <div class="section-container">
+                <div class="section-header scroll-anim">
+                    <h2 class="section-title">Explore Premium Categories</h2>
+                    <p class="section-subtitle">Curated collections for every facet of your modern lifestyle</p>
+                </div>
+                <div class="categories-grid">
+                    <!-- Category 1 -->
+                    <div class="category-card scroll-anim" data-category="Electronics">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Electronics" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Electronics</h3>
+                            <span class="category-btn">View Gear <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="category-card scroll-anim" data-category="Smart Watches">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Smart Watches" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Smart Watches</h3>
+                            <span class="category-btn">Explore <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="category-card scroll-anim" data-category="Accessories">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=500&q=80" alt="Accessories" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Accessories</h3>
+                            <span class="category-btn">See Modern Bags <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="category-card scroll-anim" data-category="Home & Kitchen">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80" alt="Home & Kitchen" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Home & Kitchen</h3>
+                            <span class="category-btn">Upgrade Home <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 5 -->
+                    <div class="category-card scroll-anim" data-category="Gaming">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80" alt="Gaming" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Gaming</h3>
+                            <span class="category-btn">Unleash Power <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 6 -->
+                    <div class="category-card scroll-anim" data-category="Fashion">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80" alt="Fashion" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Fashion</h3>
+                            <span class="category-btn">Shop Apparel <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 7 -->
+                    <div class="category-card scroll-anim" data-category="Beauty">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80" alt="Beauty" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Beauty</h3>
+                            <span class="category-btn">View Skincare <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <!-- Category 8 -->
+                    <div class="category-card scroll-anim" data-category="Fitness">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&q=80" alt="Fitness" loading="lazy">
+                        </div>
+                        <div class="category-overlay">
+                            <h3>Fitness</h3>
+                            <span class="category-btn">Level Up <i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Smart Watch">
+        <!-- Product Hub (Flash Sale, Best Sellers, Trending, Featured) -->
+        <section class="products-hub-section" id="products-hub">
+            <div class="section-container">
+                <div class="section-header scroll-anim">
+                    <h2 class="section-title">Shop Our Flagship Products</h2>
+                    <p class="section-subtitle">Real-time stock, verified reviews, and secure checkout processing</p>
+                </div>
 
-<h3>Smart Watch Pro</h3>
+                <!-- Collection/Tag Filter Tabs -->
+                <div class="filter-tabs-wrapper scroll-anim">
+                    <button class="filter-tab active" data-tag="all">All Products</button>
+                    <button class="filter-tab" data-tag="featured">Featured Products</button>
+                    <button class="filter-tab" data-tag="bestseller">Best Sellers</button>
+                    <button class="filter-tab" data-tag="trending">Trending Products</button>
+                    <button class="filter-tab" data-tag="flash">Flash Sale</button>
+                </div>
 
-<div class="rating">⭐⭐⭐⭐⭐ (125)</div>
+                <!-- Products Grid Container -->
+                <div class="products-grid" id="products-grid-container">
+                    <!-- Dynamic rendering happens via JS (12 Premium products) -->
+                </div>
+            </div>
+        </section>
 
-<p class="price">
-<del>$59.99</del>
-<strong>$39.99</strong>
-</p>
+        <!-- Dynamic Flash Sale Promotional Banner -->
+        <section class="flash-promo-banner scroll-anim">
+            <div class="promo-bg-illustration"></div>
+            <div class="promo-inner-content">
+                <span class="promo-badge-tag">HURRY! LIMITED STOCKS REMAINING</span>
+                <h2>Mega Midnight Flash Sale</h2>
+                <p>Enjoy incredible price reductions on elite electronic accessories. Sale ends soon.</p>
+                <!-- Countdown Clock -->
+                <div id="countdown-clock" class="countdown-clock">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>Mins</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>Secs</label>
+                    </div>
+                </div>
+                <button class="btn btn-primary flash-buy-btn" onclick="scrollToProductsTag('flash')">Secure Flash Deal</button>
+            </div>
+        </section>
 
-<button>Add to Cart</button>
+        <!-- Customer Reviews (Minimum 6 Testimonials) -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="section-container">
+                <div class="section-header scroll-anim">
+                    <h2 class="section-title">Loved by 50,000+ Shoppers</h2>
+                    <p class="section-subtitle">Transparent feedback from our global community of modern buyers</p>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"The Ultra Wireless Headphones sound absolutely outstanding. The deep bass and robust battery life completely changed my home workspace dynamic."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80" alt="Sarah M." loading="lazy">
+                            <div>
+                                <h4>Sarah M.</h4>
+                                <span>Verified Buyer • USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Fastest logistics support ever. Ordered my AMOLED Smart Watch and received it within 3 business days perfectly packaged. Highly recommend ShopTuch."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80" alt="David K." loading="lazy">
+                            <div>
+                                <h4>David K.</h4>
+                                <span>Verified Buyer • United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review-text">"Excellent build quality on the leather backpack. Fits my gaming laptop and remains extremely comfortable to carry around."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&q=80" alt="Jessica L." loading="lazy">
+                            <div>
+                                <h4>Jessica L.</h4>
+                                <span>Verified Buyer • Canada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"The mechanical keyboard is exceptionally responsive. Typing is satisfying, and the RGB lighting matches my gaming rig brilliantly."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80" alt="Michael B." loading="lazy">
+                            <div>
+                                <h4>Michael B.</h4>
+                                <span>Verified Buyer • Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Incredibly professional customer support team. They resolved my custom tracking request within ten minutes. Absolute class."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&q=80" alt="Emma W." loading="lazy">
+                            <div>
+                                <h4>Emma W.</h4>
+                                <span>Verified Buyer • Australia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 6 -->
+                    <div class="testimonial-card scroll-anim">
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">"Love the built-in dark mode toggle. It is very satisfying to shop late at night without eye strain. Highly secure billing flow."</p>
+                        <div class="reviewer-meta">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&q=80" alt="Daniel S." loading="lazy">
+                            <div>
+                                <h4>Daniel S.</h4>
+                                <span>Verified Buyer • Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <!-- Brands Section -->
+        <section class="brands-section scroll-anim">
+            <div class="section-container">
+                <h3 class="brands-title">Premium Brands We Support & Drop</h3>
+                <div class="brands-slider">
+                    <div class="brand-item" aria-label="Apple Product Dropship"><i class="fa-brands fa-apple"></i> <span>Apple</span></div>
+                    <div class="brand-item" aria-label="Samsung Accessory Compatibility"><i class="fa-solid fa-mobile-screen-button"></i> <span>Samsung</span></div>
+                    <div class="brand-item" aria-label="Xiaomi Ecosystem Integration"><i class="fa-solid fa-microchip"></i> <span>Xiaomi</span></div>
+                    <div class="brand-item" aria-label="Sony Audio Products"><i class="fa-solid fa-headphones-simple"></i> <span>Sony</span></div>
+                    <div class="brand-item" aria-label="Nike Premium Gear"><i class="fa-solid fa-shoe-prints"></i> <span>Nike</span></div>
+                    <div class="brand-item" aria-label="Adidas Performance Apparel"><i class="fa-solid fa-shirt"></i> <span>Adidas</span></div>
+                </div>
+            </div>
+        </section>
 
-<div class="card">
+        <!-- Trust Features Badge Row -->
+        <section class="trust-features-section">
+            <div class="features-grid section-container">
+                <div class="feature-box scroll-anim">
+                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h4>Express Worldwide Shipping</h4>
+                    <p>Dispatched with tracking numbers within 24 hours.</p>
+                </div>
+                <div class="feature-box scroll-anim">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Secured SSL Payment Portal</h4>
+                    <p>Encrypted by industry leading 256-bit certificates.</p>
+                </div>
+                <div class="feature-box scroll-anim">
+                    <div class="feature-icon"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                    <h4>30-Day Money Back Guarantee</h4>
+                    <p>Simple return pathways with no tedious processing questions.</p>
+                </div>
+                <div class="feature-box scroll-anim">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h4>24/7 Dedicated Support Helpdesk</h4>
+                    <p>Always active email and automated ticketing pathways.</p>
+                </div>
+            </div>
+        </section>
 
-<span class="badge">-20%</span>
+        <!-- Newsletter Section -->
+        <section class="newsletter-section scroll-anim">
+            <div class="newsletter-overlay"></div>
+            <div class="newsletter-content">
+                <div class="newsletter-icon-ring">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <h2>Unlock the VIP E-commerce Club</h2>
+                <p>Join over 100,000 shoppers and receive unique product drops, flash sale alerts, and customized 30% discount coupons direct to your inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); handleNewsletterSubscribe();">
+                    <input type="email" id="newsletter-email" placeholder="Type your primary email address..." aria-label="Your email address" required>
+                    <button type="submit" class="btn btn-primary newsletter-submit-btn">Subscribe Today</button>
+                </form>
+                <span class="newsletter-small-text">🛡️ We pledge never to share or sell your details. Opt out at any point with one simple click.</span>
+            </div>
+        </section>
+    </main>
 
-<img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=500" alt="Wireless Earbuds">
+    <!-- Professional E-commerce Footer -->
+    <footer id="footer" class="main-footer">
+        <div class="footer-upper">
+            <div class="footer-container">
+                <!-- Branding column -->
+                <div class="footer-col footer-col-brand">
+                    <a href="#" class="footer-logo"><span class="logo-accent">Shop</span>Tuch</a>
+                    <p class="brand-desc">ShopTuch brings the absolute pinnacle of premium global dropshipping items direct to your door, without standard retail markup.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow ShopTuch on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Follow ShopTuch on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Follow ShopTuch on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" aria-label="Follow ShopTuch on YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- Quick links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home Landing Page</a></li>
+                        <li><a href="#categories">Explore Categories</a></li>
+                        <li><a href="#products-hub">Featured Collection</a></li>
+                        <li><a href="#testimonials">Customer Reviews</a></li>
+                        <li><a href="#products-hub" onclick="scrollToProductsTag('bestseller')">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <!-- Support Column -->
+                <div class="footer-col">
+                    <h4>Customer Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Helpdesk</a></li>
+                        <li><a href="#">Track Order Shipment</a></li>
+                        <li><a href="#">Shipping Rates & Policies</a></li>
+                        <li><a href="#">Refunds & Return Center</a></li>
+                        <li><a href="#">Common Questions (FAQ)</a></li>
+                    </ul>
+                </div>
+                <!-- Legal / Policies Column -->
+                <div class="footer-col">
+                    <h4>Security & Policies</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Protection Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Dropship Partner Terms</a></li>
+                        <li><a href="#">DMCA Compliance Policy</a></li>
+                        <li><a href="#">Cookie Setting Framework</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Lower -->
+        <div class="footer-lower">
+            <div class="footer-lower-container">
+                <p>&copy; 2026 ShopTuch Inc. All Rights Reserved. Crafted with care for global customers.</p>
+                <div class="payment-badges" aria-label="Accepted Payment Gateways">
+                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
+                    <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+                    <i class="fa-brands fa-cc-stripe" title="Stripe Secure"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<h3>Wireless Earbuds</h3>
+    <!-- Shopping Slide-out Cart Drawer -->
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Your Cart Content">
+        <div class="cart-drawer-header">
+            <h3>My Premium Cart (<span id="drawer-cart-count">0</span>)</h3>
+            <button id="cart-drawer-close" class="close-drawer-btn" aria-label="Close Shopping Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cart-drawer-items" id="cart-items-container">
+            <!-- Dynamic Cart Items rendering through JavaScript -->
+            <div class="cart-empty-message">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <p>Your shopping cart is currently empty.</p>
+                <button class="btn btn-primary" onclick="toggleCartDrawer()">Explore Our Catalog</button>
+            </div>
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-summary-line">
+                <span>Shipping fee:</span>
+                <span class="free-badge">FREE</span>
+            </div>
+            <div class="cart-summary-line subtotal-line">
+                <span>Total Amount:</span>
+                <strong id="cart-subtotal-amount">$0.00</strong>
+            </div>
+            <button class="btn btn-primary btn-checkout-action" onclick="triggerCheckoutAlert()">
+                Proceed to Secure Checkout <i class="fa-solid fa-lock"></i>
+            </button>
+        </div>
+    </aside>
+    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
 
-<div class="rating">⭐⭐⭐⭐☆ (98)</div>
+    <!-- Quick View Overlay Modal -->
+    <div id="quickview-modal" class="quickview-modal" role="dialog" aria-modal="true" aria-labelledby="quickview-title">
+        <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Quick View Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-body-grid">
+                <div class="modal-image-col">
+                    <img id="modal-product-image" src="" alt="Premium Product Preview">
+                </div>
+                <div class="modal-details-col">
+                    <span id="modal-product-tag" class="modal-tag">Featured</span>
+                    <h2 id="modal-product-title" class="modal-title">Product Headline</h2>
+                    <div class="modal-review-bar">
+                        <div class="stars-container" id="modal-stars"></div>
+                        <span id="modal-reviews-count" class="reviews-count">(0 Reviews)</span>
+                    </div>
+                    <div class="modal-pricing">
+                        <span id="modal-price-old" class="price-old">$0.00</span>
+                        <span id="modal-price-new" class="price-new">$0.00</span>
+                    </div>
+                    <p id="modal-product-description" class="modal-description">This premium dropshipped product represents the highest level of craftsmanship and functional value, direct from our production facilities to your address.</p>
+                    <div class="modal-actions">
+                        <div class="quantity-picker">
+                            <button id="qty-minus" aria-label="Decrease Quantity"><i class="fa-solid fa-minus"></i></button>
+                            <span id="qty-val">1</span>
+                            <button id="qty-plus" aria-label="Increase Quantity"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button id="modal-add-to-cart-btn" class="btn btn-primary modal-action-btn-cart">Add to Cart</button>
+                    </div>
+                    <div class="modal-trust-logos">
+                        <div><i class="fa-solid fa-truck"></i> Fast Express Post</div>
+                        <div><i class="fa-solid fa-shield"></i> Standard Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-backdrop" class="modal-backdrop"></div>
 
-<p class="price">
-<del>$39.99</del>
-<strong>$29.99</strong>
-</p>
+    <!-- Wishlist Side Drawer -->
+    <aside id="wishlist-drawer" class="wishlist-drawer" aria-label="Wishlist Items">
+        <div class="wishlist-drawer-header">
+            <h3>My Wishlist (<span id="drawer-wishlist-count">0</span>)</h3>
+            <button id="wishlist-drawer-close" class="close-drawer-btn" aria-label="Close Wishlist">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="wishlist-drawer-items" id="wishlist-items-container">
+            <!-- Dynamic Wishlist Items rendering through JavaScript -->
+        </div>
+    </aside>
+    <div id="wishlist-drawer-overlay" class="drawer-overlay"></div>
 
-<button>Add to Cart</button>
+    <!-- Toast Notification Hub -->
+    <div id="toast-hub" class="toast-hub"></div>
 
-</div>
-
-<div class="card">
-
-<span class="badge">-15%</span>
-
-<img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?w=500" alt="Mini Projector">
-
-<h3>Mini Projector</h3>
-
-<div class="rating">⭐⭐⭐⭐⭐ (210)</div>
-
-<p class="price">
-<del>$99.99</del>
-<strong>$79.99</strong>
-</p>
-
-<button>Add to Cart</button>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 ShopTuch. All Rights Reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <!-- Custom Script -->
+    <script src="script.js"></script>
 </body>
 </html>
