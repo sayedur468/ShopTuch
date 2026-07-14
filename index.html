@@ -4,650 +4,852 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
-    <title>ShopTuch | Premium Online Shopping - Fast Shipping & Secure Checkout</title>
-    <meta name="description" content="Discover premium electronics, smart watches, modern fashion, home essentials, and gaming gear at ShopTuch. Experience lightning fast shipping and secure checkout.">
-    <meta name="keywords" content="premium shopping, e-commerce, dropshipping, smart watches, electronics, fashion, beauty, gaming accessories, ShopTuch">
-    <meta name="author" content="ShopTuch Developer">
+    <!-- Premium SEO Metadata -->
+    <title>ShopTuch — Premium Minimalist E-Commerce Experience</title>
+    <meta name="description" content="Discover ShopTuch, an ultra-premium curated luxury marketplace. Experience precision-crafted design, seamless shopping, and curated collections tailored to modern lifestyles.">
+    <meta name="keywords" content="premium shopping, luxury e-commerce, minimalist fashion, high-end electronics, modern lifestyle, ShopTuch, design-forward shopping">
+    <meta name="author" content="ShopTuch Architect">
     <meta name="robots" content="index, follow">
-    
+    <link rel="canonical" href="https://shoptuch.pages.dev/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shoptuch.example.com/">
-    <meta property="og:title" content="ShopTuch | Premium Online Shopping">
-    <meta property="og:description" content="Shop the latest premium items on ShopTuch. Fast shipping, responsive 24/7 support, and elite product selections.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80">
+    <meta property="og:url" content="https://shoptuch.pages.dev/">
+    <meta property="og:title" content="ShopTuch — Premium Minimalist E-Commerce Experience">
+    <meta property="og:description" content="Discover ShopTuch, an ultra-premium curated luxury marketplace. Experience precision-crafted design, seamless shopping, and curated collections tailored to modern lifestyles.">
+    <meta property="og:image" content="images/banner.jpg">
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://shoptuch.example.com/">
-    <meta property="twitter:title" content="ShopTuch | Premium Online Shopping">
-    <meta property="twitter:description" content="Shop the latest premium items on ShopTuch. Fast shipping, responsive 24/7 support, and elite product selections.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&q=80">
+    <meta property="twitter:url" content="https://shoptuch.pages.dev/">
+    <meta property="twitter:title" content="ShopTuch — Premium Minimalist E-Commerce Experience">
+    <meta property="twitter:description" content="Discover ShopTuch, an ultra-premium curated luxury marketplace. Experience precision-crafted design, seamless shopping, and curated collections tailored to modern lifestyles.">
+    <meta property="twitter:image" content="images/banner.jpg">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://shoptuch.example.com/">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/shopping-bag.png">
-
-    <!-- Google Fonts -->
+    <!-- Design Fonts & Icon Libraries -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
+    <!-- Main Stylesheet (To be generated next) -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data / JSON-LD Schema for Excellent SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "ShopTuch",
+      "image": "images/banner.jpg",
+      "description": "Ultra-premium curated luxury marketplace.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Premium Blvd",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94103",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "telephone": "+18005558824",
+      "priceRange": "$$$$"
+    }
+    </script>
 </head>
-<body>
+<body class="light-mode">
 
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="loading-screen">
-        <div class="spinner"></div>
+    <!-- Premium Loading Screen -->
+    <div id="loading-screen" aria-hidden="true">
+        <div class="loader-content">
+            <span class="loader-logo">ShopTuch</span>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+            <span class="loader-text">Initializing Premium Experience</span>
+        </div>
     </div>
 
-    <!-- Scroll To Top Button -->
-    <button id="scroll-to-top" class="scroll-to-top-btn" aria-label="Scroll to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- Top Promo Bar -->
-    <div class="promo-bar">
-        <span>⚡ Flash Sale: Get 20% Off with Code: <strong>TUCH20</strong> | Free Worldwide Shipping Today Only!</span>
-    </div>
-
-    <!-- Black Header & Sticky Nav -->
-    <header class="main-header">
+    <!-- Sticky Header -->
+    <header class="main-header" id="sticky-header">
         <div class="header-container">
             <!-- Brand Logo -->
             <a href="#" class="brand-logo" aria-label="ShopTuch Home">
-                <span class="logo-accent">Shop</span>Tuch
+                <span class="logo-accent">S</span>hopTuch
             </a>
 
-            <!-- Live Search Bar -->
-            <div class="search-wrapper">
-                <form id="search-form" class="search-form" onsubmit="event.preventDefault();">
-                    <input type="text" id="product-search" placeholder="Search premium items, electronic gadgets..." aria-label="Search Products">
-                    <button type="submit" class="search-btn" aria-label="Search Submit Button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-
-            <!-- Navigation Links -->
-            <nav class="desktop-nav" aria-label="Primary Navigation">
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav" aria-label="Main Navigation">
                 <ul class="nav-list">
                     <li><a href="#" class="nav-link active">Home</a></li>
-                    <li><a href="#categories" class="nav-link">Categories</a></li>
-                    <li><a href="#products-hub" class="nav-link">Products</a></li>
-                    <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                    <li><a href="#footer" class="nav-link">About</a></li>
+                    <li><a href="#categories" class="nav-link">Shop</a></li>
+                    <li><a href="#flash-sale" class="nav-link">Offers</a></li>
+                    <li><a href="#about" class="nav-link">Philosophy</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
-            <!-- Utility Action Controls -->
+            <!-- Action Controls -->
             <div class="header-actions">
+                <!-- Search Button (Activates Panel) -->
+                <button class="action-btn" id="search-trigger" aria-label="Search Catalog" aria-haspopup="true">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
                 <!-- Dark Mode Toggle -->
-                <button id="theme-toggle" class="action-btn" aria-label="Toggle Dark Mode" title="Toggle Theme">
+                <button class="action-btn" id="theme-toggle" aria-label="Toggle visual theme">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 
-                <!-- Wishlist Icon Counter -->
-                <button id="wishlist-trigger" class="action-btn" aria-label="Open Wishlist" title="Your Wishlist">
-                    <i class="fa-solid fa-heart"></i>
-                    <span id="wishlist-badge" class="badge">0</span>
+                <!-- Wishlist Trigger -->
+                <button class="action-btn" id="wishlist-trigger" aria-label="View Wishlist" aria-haspopup="true">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
                 </button>
 
-                <!-- Cart Icon Counter -->
-                <button id="cart-trigger" class="action-btn cart-btn" aria-label="Open Cart" title="Your Shopping Cart">
+                <!-- Shopping Cart Trigger -->
+                <button class="action-btn" id="cart-trigger" aria-label="View Shopping Cart" aria-haspopup="true">
                     <i class="fa-solid fa-bag-shopping"></i>
-                    <span id="cart-badge" class="badge">0</span>
+                    <span class="badge" id="cart-count">0</span>
                 </button>
 
-                <!-- Mobile Navigation Toggle -->
-                <button id="mobile-menu-trigger" class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
-                    <i class="fa-solid fa-bars"></i>
+                <!-- Hamburger Menu Button (Mobile) -->
+                <button class="hamburger-menu" id="mobile-menu-trigger" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobile-nav-drawer" class="mobile-drawer">
-        <div class="drawer-header">
-            <span class="drawer-logo"><span class="logo-accent">Shop</span>Tuch</span>
-            <button id="mobile-menu-close" class="close-drawer-btn" aria-label="Close Mobile Menu">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+    <!-- Mobile Navigation Overlay Drawer -->
+    <nav class="mobile-nav" id="mobile-navigation" aria-hidden="true">
+        <div class="mobile-nav-inner">
+            <div class="mobile-nav-header">
+                <span class="brand-logo"><span class="logo-accent">S</span>hopTuch</span>
+                <button id="mobile-menu-close" aria-label="Close menu" class="action-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#categories" class="mobile-nav-link">Shop Collection</a></li>
+                <li><a href="#flash-sale" class="mobile-nav-link">Special Offers</a></li>
+                <li><a href="#about" class="mobile-nav-link">Our Philosophy</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Connect with Us</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <p>Curated Design & Premium Lifestyle</p>
+                <div class="social-links-drawer">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X (formerly Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
-        <div class="mobile-search">
-            <form id="mobile-search-form" onsubmit="event.preventDefault();">
-                <input type="text" id="mobile-search-input" placeholder="Search products..." aria-label="Search Input">
-                <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+    </nav>
+
+    <!-- Interactive Search Bar Overlay -->
+    <div class="search-overlay" id="search-overlay" aria-hidden="true">
+        <div class="search-container">
+            <div class="search-header">
+                <label for="live-search-input" class="sr-only">Search products</label>
+                <input type="text" id="live-search-input" placeholder="Search curated objects, tech, apparel..." autocomplete="off">
+                <button id="search-close" class="action-btn" aria-label="Close search overlay"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="search-results-section">
+                <p class="search-hint">Start typing to see high-precision search suggestions.</p>
+                <div class="search-results" id="search-results-container">
+                    <!-- Loaded Dynamically via JS -->
+                </div>
+            </div>
         </div>
-        <nav class="mobile-links" aria-label="Mobile Navigation Drawer Links">
-            <a href="#" class="mobile-link-item">Home</a>
-            <a href="#categories" class="mobile-link-item">Categories</a>
-            <a href="#products-hub" class="mobile-link-item">Products</a>
-            <a href="#testimonials" class="mobile-link-item">Reviews</a>
-            <a href="#footer" class="mobile-link-item">About Us</a>
-        </nav>
     </div>
-    <div id="drawer-overlay" class="drawer-overlay"></div>
 
+    <!-- Main Content Area -->
     <main>
-        <!-- Premium Hero Banner Section -->
-        <section class="hero-section" id="home">
-            <div class="hero-bg-overlay"></div>
-            <div class="hero-content scroll-anim animate-fade-up">
-                <span class="hero-tag">EXCLUSIVE DROPSHIPPING EXCELLENCE</span>
-                <h1 class="hero-headline">Premium Online Shopping</h1>
-                <p class="hero-subtitle">Best Products • Fast Shipping • Secure Checkout</p>
-                <div class="hero-actions-container">
-                    <a href="#products-hub" class="btn btn-primary">Shop Now <i class="fa-solid fa-chevron-right"></i></a>
-                    <a href="#categories" class="btn btn-outline">Explore <i class="fa-solid fa-compass"></i></a>
-                </div>
+        
+        <!-- Hero Banner Section -->
+        <section class="hero-section" id="hero">
+            <!-- Animated Ambient Background Canvas -->
+            <div class="animated-bg" aria-hidden="true">
+                <div class="gradient-sphere sphere-1"></div>
+                <div class="gradient-sphere sphere-2"></div>
+                <div class="gradient-sphere sphere-3"></div>
             </div>
-            <div class="hero-stats">
-                <div class="stat-box">
-                    <span class="stat-num">50K+</span>
-                    <span class="stat-text">Happy Customers</span>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Curated Collection 2026</span>
+                    <h1 class="hero-title">Engineering the <br><span class="text-glow">Ultimate Touch</span></h1>
+                    <p class="hero-subtitle">Meticulously crafted objects that balance extreme performance with human scale minimalist industrial design.</p>
+                    <div class="hero-actions-container">
+                        <a href="#shop-anchor" class="btn btn-primary">
+                            <span>Explore Catalog</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#philosophy" class="btn btn-secondary">Learn Craftsmanship</a>
+                    </div>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-num">24h</span>
-                    <span class="stat-text">Express Dispatch</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-num">4.9★</span>
-                    <span class="stat-text">Verified Reviews</span>
+
+                <!-- Featured Hero Visual Display with Glassmorphic Elements -->
+                <div class="hero-display">
+                    <div class="hero-glass-card">
+                        <img src="images/banner.jpg" alt="ShopTuch Signature Design Setup" class="hero-image" fetchpriority="high">
+                        <div class="glass-tag tag-top">
+                            <span class="tag-dot"></span>
+                            <span class="tag-text">Industrial Design Award '26</span>
+                        </div>
+                        <div class="glass-tag tag-bottom">
+                            <span class="tag-title">Minimalist Studio Setup</span>
+                            <span class="tag-price">$1,499</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Categories Section -->
+        <!-- Statistics Section -->
+        <section class="stats-section" id="about">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-architects">15+</span>
+                    <span class="stat-label">In-House Designers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-carbon">0%</span>
+                    <span class="stat-label">Net Carbon Footprint</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-delivery">24h</span>
+                    <span class="stat-label">Global Express Processing</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="stat-satisfaction">99.8%</span>
+                    <span class="stat-label">Verification Rate</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8 Beautiful Categories Section -->
         <section class="categories-section" id="categories">
-            <div class="section-container">
-                <div class="section-header scroll-anim">
-                    <h2 class="section-title">Explore Premium Categories</h2>
-                    <p class="section-subtitle">Curated collections for every facet of your modern lifestyle</p>
+            <div class="section-header">
+                <span class="section-tag">High-End Curations</span>
+                <h2 class="section-title">Designed for Living</h2>
+                <p class="section-subtitle">Select a category to discover tailored precision products crafted specifically to inspire details.</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Category 1: Tech/Workspace -->
+                <div class="category-card" data-category="workspace">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category1.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Premium Workspace Hardware" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Workspace</h3>
+                        <p>Desks, stands & structural storage</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
                 </div>
-                <div class="categories-grid">
-                    <!-- Category 1 -->
-                    <div class="category-card scroll-anim" data-category="Electronics">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80" alt="Electronics" loading="lazy">
+
+                <!-- Category 2: Audio/Acoustics -->
+                <div class="category-card" data-category="audio">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category2.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Acoustic Audio Equipment" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Audio</h3>
+                        <p>Studio monitors & direct drivers</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 3: Wearables -->
+                <div class="category-card" data-category="wearables">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category3.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Architectural Smart Wearables" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Wearables</h3>
+                        <p>Aerospace-grade instruments</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Lighting -->
+                <div class="category-card" data-category="lighting">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category4.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Premium Diffused Architectural Lighting" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Lighting</h3>
+                        <p>Diffused circadian arrays</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 5: Desktop Objects -->
+                <div class="category-card" data-category="objects">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category5.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Precision Desktop Sculptural Objects" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Desktop Objects</h3>
+                        <p>Solid brass & alloy organization</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 6: Apparel -->
+                <div class="category-card" data-category="apparel">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category6.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Premium Fabric Garments" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Premium Apparel</h3>
+                        <p>Japanese heavy milled cotton</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 7: Modern Bags -->
+                <div class="category-card" data-category="bags">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category7.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Sleek Tech Commuter Bags" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Bags & Cases</h3>
+                        <p>Water-repellent modular architecture</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+
+                <!-- Category 8: Writing Instruments -->
+                <div class="category-card" data-category="writing">
+                    <div class="category-image-wrapper">
+                        <img data-src="images/category8.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Prestige Mechanical Pens" class="lazy-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Writing Tools</h3>
+                        <p>Grade-5 titanium mechanical markers</p>
+                        <span class="category-link">View Collection <i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flash Sale Section (With Countdown) -->
+        <section class="flash-sale-section" id="flash-sale">
+            <div class="flash-sale-card">
+                <div class="flash-content">
+                    <span class="flash-tag-badge"><i class="fa-solid fa-bolt"></i> Time-Limited Opportunity</span>
+                    <h2 class="flash-title">The Monolith Suite</h2>
+                    <p class="flash-description">The complete home-office curation designed to redefine focus. Quantities capped at 100 units worldwide.</p>
+                    
+                    <!-- Premium Countdown Timer -->
+                    <div class="countdown-container" id="countdown-timer" data-time="Dec 31, 2026 23:59:59">
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Days</span>
                         </div>
-                        <div class="category-overlay">
-                            <h3>Electronics</h3>
-                            <span class="category-btn">View Gear <i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Mins</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Secs</span>
                         </div>
                     </div>
-                    <!-- Category 2 -->
-                    <div class="category-card scroll-anim" data-category="Smart Watches">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80" alt="Smart Watches" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Smart Watches</h3>
-                            <span class="category-btn">Explore <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
+
+                    <div class="flash-pricing">
+                        <span class="price-old">$3,200</span>
+                        <span class="price-new">$2,450</span>
                     </div>
-                    <!-- Category 3 -->
-                    <div class="category-card scroll-anim" data-category="Accessories">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?w=500&q=80" alt="Accessories" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Accessories</h3>
-                            <span class="category-btn">See Modern Bags <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
+
+                    <button class="btn btn-primary" id="add-flash-deal" data-deal-id="999">Secure Allocation</button>
+                </div>
+
+                <div class="flash-visual">
+                    <img data-src="images/flash-sale.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3C/svg%3E" alt="The complete luxury workplace environment setup" class="lazy-image flash-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Product Catalog Section -->
+        <section class="catalog-section" id="shop-anchor">
+            <div class="section-header">
+                <span class="section-tag">Explore Studio</span>
+                <h2 class="section-title">The Complete Curation</h2>
+            </div>
+
+            <!-- Dynamic Product Filtering Controls -->
+            <div class="catalog-controls">
+                <!-- Group Tabs (Featured, Best Sellers, Trending) -->
+                <div class="filter-tabs" role="tablist">
+                    <button class="filter-tab-btn active" role="tab" aria-selected="true" data-filter="all">All Products</button>
+                    <button class="filter-tab-btn" role="tab" aria-selected="false" data-filter="featured">Featured</button>
+                    <button class="filter-tab-btn" role="tab" aria-selected="false" data-filter="best-seller">Best Sellers</button>
+                    <button class="filter-tab-btn" role="tab" aria-selected="false" data-filter="trending">Trending</button>
+                </div>
+
+                <!-- Custom Filtering Dropdowns -->
+                <div class="filter-actions">
+                    <div class="filter-group">
+                        <label for="catalog-category-filter" class="sr-only">Filter by Category</label>
+                        <select id="catalog-category-filter" class="filter-select">
+                            <option value="all">All Categories</option>
+                            <option value="workspace">Workspace</option>
+                            <option value="audio">Audio</option>
+                            <option value="wearables">Wearables</option>
+                            <option value="lighting">Lighting</option>
+                            <option value="objects">Desktop Objects</option>
+                            <option value="apparel">Apparel</option>
+                            <option value="bags">Bags & Cases</option>
+                            <option value="writing">Writing Tools</option>
+                        </select>
                     </div>
-                    <!-- Category 4 -->
-                    <div class="category-card scroll-anim" data-category="Home & Kitchen">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80" alt="Home & Kitchen" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Home & Kitchen</h3>
-                            <span class="category-btn">Upgrade Home <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
+
+                    <div class="filter-group">
+                        <label for="catalog-price-sort" class="sr-only">Sort by Price</label>
+                        <select id="catalog-price-sort" class="filter-select">
+                            <option value="default">Default Sorting</option>
+                            <option value="low-high">Price: Low to High</option>
+                            <option value="high-low">Price: High to Low</option>
+                        </select>
                     </div>
-                    <!-- Category 5 -->
-                    <div class="category-card scroll-anim" data-category="Gaming">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80" alt="Gaming" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Dynamic Grid (Renders Skeleton Loaders initially for Lighthouse CLS preservation) -->
+            <div class="product-grid" id="main-product-grid">
+                <!-- Skeleton Loader 1 -->
+                <div class="skeleton-card" aria-hidden="true">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-line-long"></div>
+                    <div class="skeleton-line-short"></div>
+                    <div class="skeleton-line-medium"></div>
+                </div>
+                <!-- Skeleton Loader 2 -->
+                <div class="skeleton-card" aria-hidden="true">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-line-long"></div>
+                    <div class="skeleton-line-short"></div>
+                    <div class="skeleton-line-medium"></div>
+                </div>
+                <!-- Skeleton Loader 3 -->
+                <div class="skeleton-card" aria-hidden="true">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-line-long"></div>
+                    <div class="skeleton-line-short"></div>
+                    <div class="skeleton-line-medium"></div>
+                </div>
+                <!-- Skeleton Loader 4 -->
+                <div class="skeleton-card" aria-hidden="true">
+                    <div class="skeleton-image"></div>
+                    <div class="skeleton-line-long"></div>
+                    <div class="skeleton-line-short"></div>
+                    <div class="skeleton-line-medium"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosphy & Craftsmanship Section -->
+        <section class="philosophy-section" id="philosophy">
+            <div class="philosophy-container">
+                <div class="philosophy-visual">
+                    <img data-src="images/philosophy.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 12'%3E%3C/svg%3E" alt="The architectural precision design process" class="lazy-image philosophy-img">
+                </div>
+                <div class="philosophy-content">
+                    <span class="section-tag">Craftsmanship Philosophy</span>
+                    <h2 class="section-title">Perfect Balance, Minimal Form</h2>
+                    <p class="philosophy-text">At ShopTuch, we do not believe in disposable aesthetics. Every structural element must justify its inclusion, starting from original sketches modeled in California down to the CNC aluminum milling executed in Japan.</p>
+                    <p class="philosophy-text">Our physical designs integrate glassmorphism tactile response with high endurance finishes, built specifically for customers who align themselves with the philosophy of timeless, premium engineering.</p>
+                    <div class="philosophy-signatures">
+                        <div class="signature-block">
+                            <span class="signature-title">Marcus Tuch</span>
+                            <span class="signature-role">Principal UX Architect</span>
                         </div>
-                        <div class="category-overlay">
-                            <h3>Gaming</h3>
-                            <span class="category-btn">Unleash Power <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <!-- Category 6 -->
-                    <div class="category-card scroll-anim" data-category="Fashion">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80" alt="Fashion" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Fashion</h3>
-                            <span class="category-btn">Shop Apparel <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <!-- Category 7 -->
-                    <div class="category-card scroll-anim" data-category="Beauty">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&q=80" alt="Beauty" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Beauty</h3>
-                            <span class="category-btn">View Skincare <i class="fa-solid fa-arrow-right-long"></i></span>
-                        </div>
-                    </div>
-                    <!-- Category 8 -->
-                    <div class="category-card scroll-anim" data-category="Fitness">
-                        <div class="category-image-container">
-                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=500&q=80" alt="Fitness" loading="lazy">
-                        </div>
-                        <div class="category-overlay">
-                            <h3>Fitness</h3>
-                            <span class="category-btn">Level Up <i class="fa-solid fa-arrow-right-long"></i></span>
+                        <div class="signature-block">
+                            <span class="signature-title">Evelyn Vance</span>
+                            <span class="signature-role">Materials Lead Specialist</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Product Hub (Flash Sale, Best Sellers, Trending, Featured) -->
-        <section class="products-hub-section" id="products-hub">
-            <div class="section-container">
-                <div class="section-header scroll-anim">
-                    <h2 class="section-title">Shop Our Flagship Products</h2>
-                    <p class="section-subtitle">Real-time stock, verified reviews, and secure checkout processing</p>
-                </div>
-
-                <!-- Collection/Tag Filter Tabs -->
-                <div class="filter-tabs-wrapper scroll-anim">
-                    <button class="filter-tab active" data-tag="all">All Products</button>
-                    <button class="filter-tab" data-tag="featured">Featured Products</button>
-                    <button class="filter-tab" data-tag="bestseller">Best Sellers</button>
-                    <button class="filter-tab" data-tag="trending">Trending Products</button>
-                    <button class="filter-tab" data-tag="flash">Flash Sale</button>
-                </div>
-
-                <!-- Products Grid Container -->
-                <div class="products-grid" id="products-grid-container">
-                    <!-- Dynamic rendering happens via JS (12 Premium products) -->
-                </div>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header">
+                <span class="section-tag">Verified Perspectives</span>
+                <h2 class="section-title">Designed for Innovators</h2>
             </div>
-        </section>
 
-        <!-- Dynamic Flash Sale Promotional Banner -->
-        <section class="flash-promo-banner scroll-anim">
-            <div class="promo-bg-illustration"></div>
-            <div class="promo-inner-content">
-                <span class="promo-badge-tag">HURRY! LIMITED STOCKS REMAINING</span>
-                <h2>Mega Midnight Flash Sale</h2>
-                <p>Enjoy incredible price reductions on elite electronic accessories. Sale ends soon.</p>
-                <!-- Countdown Clock -->
-                <div id="countdown-clock" class="countdown-clock">
-                    <div class="time-unit">
-                        <span id="days">00</span>
-                        <label>Days</label>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="rating-stars" aria-label="5 star review rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <div class="time-unit">
-                        <span id="hours">00</span>
-                        <label>Hours</label>
-                    </div>
-                    <div class="time-unit">
-                        <span id="minutes">00</span>
-                        <label>Mins</label>
-                    </div>
-                    <div class="time-unit">
-                        <span id="seconds">00</span>
-                        <label>Secs</label>
+                    <p class="testimonial-comment">"The Monolith Workspace setup is structural genius. Absolutely clean design language, Zero cables visible, premium touch response. It feels like an extension of macOS."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar-placeholder">H.W</div>
+                        <div>
+                            <span class="user-name">Helena Wood</span>
+                            <span class="user-title">Senior Creative Director, Linear</span>
+                        </div>
                     </div>
                 </div>
-                <button class="btn btn-primary flash-buy-btn" onclick="scrollToProductsTag('flash')">Secure Flash Deal</button>
-            </div>
-        </section>
 
-        <!-- Customer Reviews (Minimum 6 Testimonials) -->
-        <section class="testimonials-section" id="testimonials">
-            <div class="section-container">
-                <div class="section-header scroll-anim">
-                    <h2 class="section-title">Loved by 50,000+ Shoppers</h2>
-                    <p class="section-subtitle">Transparent feedback from our global community of modern buyers</p>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="rating-stars" aria-label="5 star review rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-comment">"The Titanium mechanical pens are perfectly weighted. Truly, this is the most professional writing instrument I have owned in twenty years of architectural design."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar-placeholder">R.K</div>
+                        <div>
+                            <span class="user-name">Ryuu Kenzo</span>
+                            <span class="user-title">Design Lead, Framer Japan</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonials-grid">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="review-text">"The Ultra Wireless Headphones sound absolutely outstanding. The deep bass and robust battery life completely changed my home workspace dynamic."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80" alt="Sarah M." loading="lazy">
-                            <div>
-                                <h4>Sarah M.</h4>
-                                <span>Verified Buyer • USA</span>
-                            </div>
-                        </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="rating-stars" aria-label="5 star review rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="review-text">"Fastest logistics support ever. Ordered my AMOLED Smart Watch and received it within 3 business days perfectly packaged. Highly recommend ShopTuch."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80" alt="David K." loading="lazy">
-                            <div>
-                                <h4>David K.</h4>
-                                <span>Verified Buyer • United Kingdom</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <p class="review-text">"Excellent build quality on the leather backpack. Fits my gaming laptop and remains extremely comfortable to carry around."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&q=80" alt="Jessica L." loading="lazy">
-                            <div>
-                                <h4>Jessica L.</h4>
-                                <span>Verified Buyer • Canada</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 4 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="review-text">"The mechanical keyboard is exceptionally responsive. Typing is satisfying, and the RGB lighting matches my gaming rig brilliantly."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80" alt="Michael B." loading="lazy">
-                            <div>
-                                <h4>Michael B.</h4>
-                                <span>Verified Buyer • Germany</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 5 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="review-text">"Incredibly professional customer support team. They resolved my custom tracking request within ten minutes. Absolute class."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&q=80" alt="Emma W." loading="lazy">
-                            <div>
-                                <h4>Emma W.</h4>
-                                <span>Verified Buyer • Australia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 6 -->
-                    <div class="testimonial-card scroll-anim">
-                        <div class="rating-stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="review-text">"Love the built-in dark mode toggle. It is very satisfying to shop late at night without eye strain. Highly secure billing flow."</p>
-                        <div class="reviewer-meta">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&q=80" alt="Daniel S." loading="lazy">
-                            <div>
-                                <h4>Daniel S.</h4>
-                                <span>Verified Buyer • Singapore</span>
-                            </div>
+                    <p class="testimonial-comment">"ShopTuch captures the minimalist design philosophy perfectly. Highly fluid UX/UI, prompt carbon-neutral processing, absolute premium customer service."</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar-placeholder">A.S</div>
+                        <div>
+                            <span class="user-name">Alex Strydom</span>
+                            <span class="user-title">E-commerce Consultant, Vercel</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Brands Section -->
-        <section class="brands-section scroll-anim">
-            <div class="section-container">
-                <h3 class="brands-title">Premium Brands We Support & Drop</h3>
-                <div class="brands-slider">
-                    <div class="brand-item" aria-label="Apple Product Dropship"><i class="fa-brands fa-apple"></i> <span>Apple</span></div>
-                    <div class="brand-item" aria-label="Samsung Accessory Compatibility"><i class="fa-solid fa-mobile-screen-button"></i> <span>Samsung</span></div>
-                    <div class="brand-item" aria-label="Xiaomi Ecosystem Integration"><i class="fa-solid fa-microchip"></i> <span>Xiaomi</span></div>
-                    <div class="brand-item" aria-label="Sony Audio Products"><i class="fa-solid fa-headphones-simple"></i> <span>Sony</span></div>
-                    <div class="brand-item" aria-label="Nike Premium Gear"><i class="fa-solid fa-shoe-prints"></i> <span>Nike</span></div>
-                    <div class="brand-item" aria-label="Adidas Performance Apparel"><i class="fa-solid fa-shirt"></i> <span>Adidas</span></div>
-                </div>
+        <!-- Brand Showcase Section -->
+        <section class="brand-showcase">
+            <h3 class="sr-only">Our Industry Design Associates</h3>
+            <div class="brand-logos-container">
+                <span class="brand-partner">APPLE DESIGN CORP</span>
+                <span class="brand-partner">STRIPE ECO</span>
+                <span class="brand-partner">VERCEL INC</span>
+                <span class="brand-partner">TESLA LABS</span>
+                <span class="brand-partner">LINEAR CO</span>
+                <span class="brand-partner">FRAMER INC</span>
             </div>
         </section>
 
-        <!-- Trust Features Badge Row -->
-        <section class="trust-features-section">
-            <div class="features-grid section-container">
-                <div class="feature-box scroll-anim">
-                    <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                    <h4>Express Worldwide Shipping</h4>
-                    <p>Dispatched with tracking numbers within 24 hours.</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="section-header">
+                <span class="section-tag">Common Inquiries</span>
+                <h2 class="section-title">Clarifications</h2>
+            </div>
+
+            <div class="faq-accordion-container">
+                <details class="faq-item">
+                    <summary class="faq-question">What guarantees are offered on materials craftsmanship?</summary>
+                    <p class="faq-answer">All ShopTuch items carry a lifetime warranty covering structural degradation, manufacturing defects, and materials failures. All titanium and anodized aluminum items are certified corrosion-free.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary class="faq-question">How does your carbon-neutral program function?</summary>
+                    <p class="faq-answer">We invest 1.5% of gross revenues directly into carbon direct-air extraction projects. All premium shipping options are calculated to maintain 100% net carbon neutrality.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">Do you offer global expedited air cargo services?</summary>
+                    <p class="faq-answer">Yes. Express Air Freight delivers to metropolitan centers within 24 to 48 hours of secure digital placement, complete with secure digital signature verifications.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">Can I alter or reverse custom allocations?</summary>
+                    <p class="faq-answer">Because items are allocated dynamically inside our limited editions, order modification parameters lock within 30 minutes of secure validation.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="section-tag">Direct Lines</span>
+                    <h2 class="section-title">Connect with Our Studio Architects</h2>
+                    <p class="contact-text">Inquiries concerning custom physical commissions, business orders, or design partnerships receive a prioritized evaluation response within 3 business hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Global Headquarters</h4>
+                                <p>100 Premium Blvd, San Francisco, CA 94103</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Electronic Mail</h4>
+                                <p>architect@shoptuch.com</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Direct Liaison</h4>
+                                <p>+1 (800) 555-8824 (9:00 AM - 6:00 PM PST)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-box scroll-anim">
-                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h4>Secured SSL Payment Portal</h4>
-                    <p>Encrypted by industry leading 256-bit certificates.</p>
-                </div>
-                <div class="feature-box scroll-anim">
-                    <div class="feature-icon"><i class="fa-solid fa-arrow-rotate-left"></i></div>
-                    <h4>30-Day Money Back Guarantee</h4>
-                    <p>Simple return pathways with no tedious processing questions.</p>
-                </div>
-                <div class="feature-box scroll-anim">
-                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
-                    <h4>24/7 Dedicated Support Helpdesk</h4>
-                    <p>Always active email and automated ticketing pathways.</p>
+
+                <!-- Live Premium Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="premium-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Name</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="Marcus Aurelius" required>
+                            <span class="form-error-msg">Name must contain at least 2 characters.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email Address</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="marcus@architect.com" required>
+                            <span class="form-error-msg">Please enter a valid email format.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Inquiry Details</label>
+                            <textarea id="contact-message" class="form-input text-area" rows="4" placeholder="Describe your workspace requirements..." required></textarea>
+                            <span class="form-error-msg">Please share your project or collaboration details.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-btn">Transmit Inquiry</button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <!-- Newsletter Section -->
-        <section class="newsletter-section scroll-anim">
-            <div class="newsletter-overlay"></div>
-            <div class="newsletter-content">
-                <div class="newsletter-icon-ring">
-                    <i class="fa-regular fa-paper-plane"></i>
-                </div>
-                <h2>Unlock the VIP E-commerce Club</h2>
-                <p>Join over 100,000 shoppers and receive unique product drops, flash sale alerts, and customized 30% discount coupons direct to your inbox.</p>
-                <form class="newsletter-form" onsubmit="event.preventDefault(); handleNewsletterSubscribe();">
-                    <input type="email" id="newsletter-email" placeholder="Type your primary email address..." aria-label="Your email address" required>
-                    <button type="submit" class="btn btn-primary newsletter-submit-btn">Subscribe Today</button>
+        <section class="newsletter-section">
+            <div class="newsletter-card">
+                <span class="section-tag text-center">Exclusive Intel</span>
+                <h2 class="newsletter-title">Subscribe to Design Reports</h2>
+                <p class="newsletter-description">Be notified prior to new dynamic catalog updates, limited-edition CNC allocations, and private curated physical launches.</p>
+                
+                <form id="newsletter-form" class="newsletter-form-elem" novalidate>
+                    <label for="newsletter-email" class="sr-only">Email address for newsletters</label>
+                    <input type="email" id="newsletter-email" placeholder="Your minimalist address..." required>
+                    <button type="submit" class="btn btn-primary" aria-label="Confirm Subscription">Register</button>
+                    <span class="form-error-msg newsletter-err" id="newsletter-error">Valid email address required.</span>
                 </form>
-                <span class="newsletter-small-text">🛡️ We pledge never to share or sell your details. Opt out at any point with one simple click.</span>
             </div>
         </section>
+
     </main>
 
-    <!-- Professional E-commerce Footer -->
-    <footer id="footer" class="main-footer">
-        <div class="footer-upper">
-            <div class="footer-container">
-                <!-- Branding column -->
-                <div class="footer-col footer-col-brand">
-                    <a href="#" class="footer-logo"><span class="logo-accent">Shop</span>Tuch</a>
-                    <p class="brand-desc">ShopTuch brings the absolute pinnacle of premium global dropshipping items direct to your door, without standard retail markup.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Follow ShopTuch on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Follow ShopTuch on Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="Follow ShopTuch on TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#" aria-label="Follow ShopTuch on YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-                <!-- Quick links Column -->
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Home Landing Page</a></li>
-                        <li><a href="#categories">Explore Categories</a></li>
-                        <li><a href="#products-hub">Featured Collection</a></li>
-                        <li><a href="#testimonials">Customer Reviews</a></li>
-                        <li><a href="#products-hub" onclick="scrollToProductsTag('bestseller')">Best Sellers</a></li>
-                    </ul>
-                </div>
-                <!-- Support Column -->
-                <div class="footer-col">
-                    <h4>Customer Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Contact Helpdesk</a></li>
-                        <li><a href="#">Track Order Shipment</a></li>
-                        <li><a href="#">Shipping Rates & Policies</a></li>
-                        <li><a href="#">Refunds & Return Center</a></li>
-                        <li><a href="#">Common Questions (FAQ)</a></li>
-                    </ul>
-                </div>
-                <!-- Legal / Policies Column -->
-                <div class="footer-col">
-                    <h4>Security & Policies</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Protection Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Dropship Partner Terms</a></li>
-                        <li><a href="#">DMCA Compliance Policy</a></li>
-                        <li><a href="#">Cookie Setting Framework</a></li>
-                    </ul>
+    <!-- Trust & Quality Shipping Badge Section -->
+    <section class="trust-badges-section" aria-label="Security and Guarantee features">
+        <div class="badge-item">
+            <i class="fa-solid fa-plane"></i>
+            <h3>Express Logistics</h3>
+            <p>Carbon-neutral worldwide operations</p>
+        </div>
+        <div class="badge-item">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <h3>30-Day Re-allocation</h3>
+            <p>Complimentary reverse transit pick-up</p>
+        </div>
+        <div class="badge-item">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Encrypted Validation</h3>
+            <p>Grade-A digital transaction security</p>
+        </div>
+        <div class="badge-item">
+            <i class="fa-solid fa-award"></i>
+            <h3>Material Certificate</h3>
+            <p>Guaranteed authentic CNC components</p>
+        </div>
+    </section>
+
+    <!-- Main Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <a href="#" class="brand-logo"><span class="logo-accent">S</span>hopTuch</a>
+                <p class="footer-bio">Cultivating a dynamic catalog of industrial objects, designed with materials meant to withstand generations.</p>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
+
+            <!-- Shop Directory Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Collections</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#categories">Architectural Workspace</a></li>
+                    <li><a href="#categories">Acoustics & Speakers</a></li>
+                    <li><a href="#categories">Wearable Instruments</a></li>
+                    <li><a href="#categories">Desk Tool Accessories</a></li>
+                    <li><a href="#categories">Tactile Garments</a></li>
+                </ul>
+            </div>
+
+            <!-- Corporate Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Philosophy</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#philosophy">Design Ideology</a></li>
+                    <li><a href="#about">Net-Zero Footprint</a></li>
+                    <li><a href="#about">Materials Lab</a></li>
+                    <li><a href="#faq">Direct Support Accordions</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="footer-col">
+                <h4 class="footer-title">Jurisdiction</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#privacy-terms-modal" id="open-privacy">Privacy Policy</a></li>
+                    <li><a href="#privacy-terms-modal" id="open-terms">Terms of Agreement</a></li>
+                    <li><a href="#cookie-modal" id="open-cookies">Cookie Provisions</a></li>
+                    <li><a href="#refund-policy" id="open-refund">Return Protocol</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- Footer Lower -->
-        <div class="footer-lower">
-            <div class="footer-lower-container">
-                <p>&copy; 2026 ShopTuch Inc. All Rights Reserved. Crafted with care for global customers.</p>
-                <div class="payment-badges" aria-label="Accepted Payment Gateways">
-                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
-                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
-                    <i class="fa-brands fa-cc-paypal" title="PayPal"></i>
-                    <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
-                    <i class="fa-brands fa-cc-stripe" title="Stripe Secure"></i>
-                </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopTuch Inc. All design concepts validated internationally.</p>
+            <div class="trust-logos">
+                <i class="fa-brands fa-stripe" aria-label="Stripe Integration"></i>
+                <i class="fa-brands fa-apple-pay" aria-label="Apple Pay Secure"></i>
+                <i class="fa-brands fa-cc-visa" aria-label="Visa Secure Payment"></i>
+                <i class="fa-brands fa-cc-mastercard" aria-label="Mastercard Secure Payment"></i>
             </div>
         </div>
     </footer>
 
-    <!-- Shopping Slide-out Cart Drawer -->
-    <aside id="cart-drawer" class="cart-drawer" aria-label="Your Cart Content">
-        <div class="cart-drawer-header">
-            <h3>My Premium Cart (<span id="drawer-cart-count">0</span>)</h3>
-            <button id="cart-drawer-close" class="close-drawer-btn" aria-label="Close Shopping Cart">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-        </div>
-        <div class="cart-drawer-items" id="cart-items-container">
-            <!-- Dynamic Cart Items rendering through JavaScript -->
-            <div class="cart-empty-message">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <p>Your shopping cart is currently empty.</p>
-                <button class="btn btn-primary" onclick="toggleCartDrawer()">Explore Our Catalog</button>
-            </div>
-        </div>
-        <div class="cart-drawer-footer">
-            <div class="cart-summary-line">
-                <span>Shipping fee:</span>
-                <span class="free-badge">FREE</span>
-            </div>
-            <div class="cart-summary-line subtotal-line">
-                <span>Total Amount:</span>
-                <strong id="cart-subtotal-amount">$0.00</strong>
-            </div>
-            <button class="btn btn-primary btn-checkout-action" onclick="triggerCheckoutAlert()">
-                Proceed to Secure Checkout <i class="fa-solid fa-lock"></i>
-            </button>
-        </div>
-    </aside>
-    <div id="cart-drawer-overlay" class="drawer-overlay"></div>
+    <!-- Back To Top Button -->
+    <button id="back-to-top" aria-label="Return to zenith of layout" class="back-to-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-    <!-- Quick View Overlay Modal -->
-    <div id="quickview-modal" class="quickview-modal" role="dialog" aria-modal="true" aria-labelledby="quickview-title">
-        <div class="modal-content">
-            <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Quick View Modal">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="modal-body-grid">
-                <div class="modal-image-col">
-                    <img id="modal-product-image" src="" alt="Premium Product Preview">
+    <!-- Drawer: Shopping Cart UI -->
+    <div class="drawer" id="cart-drawer" aria-hidden="true">
+        <div class="drawer-overlay" id="cart-overlay-bg"></div>
+        <div class="drawer-inner">
+            <div class="drawer-header">
+                <h2>Shopping Bag</h2>
+                <button id="cart-drawer-close" aria-label="Close Shopping Bag" class="action-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Cart Contents Container (Dynamic) -->
+            <div class="drawer-content" id="cart-drawer-items">
+                <!-- If Cart is Empty -->
+                <div class="cart-empty-state">
+                    <i class="fa-solid fa-bag-shopping empty-icon"></i>
+                    <p>Your premium selection bag is empty.</p>
+                    <a href="#shop-anchor" class="btn btn-secondary" id="close-cart-explore">Explore Catalog</a>
                 </div>
-                <div class="modal-details-col">
-                    <span id="modal-product-tag" class="modal-tag">Featured</span>
-                    <h2 id="modal-product-title" class="modal-title">Product Headline</h2>
-                    <div class="modal-review-bar">
-                        <div class="stars-container" id="modal-stars"></div>
-                        <span id="modal-reviews-count" class="reviews-count">(0 Reviews)</span>
-                    </div>
-                    <div class="modal-pricing">
-                        <span id="modal-price-old" class="price-old">$0.00</span>
-                        <span id="modal-price-new" class="price-new">$0.00</span>
-                    </div>
-                    <p id="modal-product-description" class="modal-description">This premium dropshipped product represents the highest level of craftsmanship and functional value, direct from our production facilities to your address.</p>
-                    <div class="modal-actions">
-                        <div class="quantity-picker">
-                            <button id="qty-minus" aria-label="Decrease Quantity"><i class="fa-solid fa-minus"></i></button>
-                            <span id="qty-val">1</span>
-                            <button id="qty-plus" aria-label="Increase Quantity"><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <button id="modal-add-to-cart-btn" class="btn btn-primary modal-action-btn-cart">Add to Cart</button>
-                    </div>
-                    <div class="modal-trust-logos">
-                        <div><i class="fa-solid fa-truck"></i> Fast Express Post</div>
-                        <div><i class="fa-solid fa-shield"></i> Standard Guarantee</div>
-                    </div>
+            </div>
+
+            <!-- Cart Footer Area -->
+            <div class="drawer-footer" id="cart-drawer-footer">
+                <div class="cart-summary-line">
+                    <span>Valued Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="cart-summary-line tax-line">
+                    <span>Eco Shipping Allocation</span>
+                    <span class="text-free">Complimentary</span>
+                </div>
+                <button class="btn btn-primary checkout-btn" id="checkout-button">Proceed to Secure Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drawer: Wishlist UI -->
+    <div class="drawer" id="wishlist-drawer" aria-hidden="true">
+        <div class="drawer-overlay" id="wishlist-overlay-bg"></div>
+        <div class="drawer-inner">
+            <div class="drawer-header">
+                <h2>Saved Curation</h2>
+                <button id="wishlist-drawer-close" aria-label="Close Wishlist" class="action-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <!-- Wishlist Contents Container (Dynamic) -->
+            <div class="drawer-content" id="wishlist-drawer-items">
+                <!-- If Wishlist is Empty -->
+                <div class="wishlist-empty-state">
+                    <i class="fa-regular fa-heart empty-icon"></i>
+                    <p>No selected items saved at present.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="modal-backdrop" class="modal-backdrop"></div>
 
-    <!-- Wishlist Side Drawer -->
-    <aside id="wishlist-drawer" class="wishlist-drawer" aria-label="Wishlist Items">
-        <div class="wishlist-drawer-header">
-            <h3>My Wishlist (<span id="drawer-wishlist-count">0</span>)</h3>
-            <button id="wishlist-drawer-close" class="close-drawer-btn" aria-label="Close Wishlist">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+    <!-- Modal: Quick View Dynamic Display -->
+    <div class="modal" id="quick-view-modal" aria-hidden="true">
+        <div class="modal-overlay" id="quick-view-overlay-bg"></div>
+        <div class="modal-container">
+            <button id="quick-view-close" class="modal-close-btn" aria-label="Close Display View"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content" id="quick-view-dynamic-content">
+                <!-- Populated dynamically via JS -->
+            </div>
         </div>
-        <div class="wishlist-drawer-items" id="wishlist-items-container">
-            <!-- Dynamic Wishlist Items rendering through JavaScript -->
+    </div>
+
+    <!-- Modal: Privacy & Terms Dynamic Disclosures -->
+    <div class="modal" id="privacy-terms-modal" aria-hidden="true">
+        <div class="modal-overlay" id="privacy-terms-overlay-bg"></div>
+        <div class="modal-container narrow">
+            <button id="privacy-modal-close" class="modal-close-btn" aria-label="Close Disclosures View"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content-legal">
+                <h2 id="legal-modal-title">Terms & Policies</h2>
+                <div class="legal-text-content" id="legal-modal-body">
+                    <!-- Loaded dynamically via JavaScript based on trigger -->
+                </div>
+            </div>
         </div>
-    </aside>
-    <div id="wishlist-drawer-overlay" class="drawer-overlay"></div>
+    </div>
 
-    <!-- Toast Notification Hub -->
-    <div id="toast-hub" class="toast-hub"></div>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookie-notice" aria-hidden="true">
+        <div class="cookie-container">
+            <p class="cookie-text">ShopTuch incorporates minor local memory keys to construct and preserve your premium layout settings (e.g., Theme selections & Cart memory).</p>
+            <div class="cookie-actions">
+                <button class="btn btn-secondary btn-sm" id="cookie-reject">Decline Non-Essential</button>
+                <button class="btn btn-primary btn-sm" id="cookie-accept">Accept & Maximize Experience</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- Custom Script -->
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-wrapper" aria-live="polite">
+        <!-- Toast elements injected programmatically by JS -->
+    </div>
+
+    <!-- Main JS (To be generated on instructions) -->
     <script src="script.js"></script>
 </body>
 </html>
