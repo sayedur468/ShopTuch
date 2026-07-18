@@ -1,1 +1,428 @@
 
+<!-- Loading Screen -->
+<div id="loading-screen" class="fixed inset-0 z-[100] bg-onyx flex flex-col items-center justify-center transition-opacity duration-1000 ease-out">
+    <div class="relative flex flex-col items-center">
+        <div class="w-24 h-24 border border-gold-500/20 rounded-full flex items-center justify-center animate-subtle-spin mb-6">
+            <div class="w-20 h-20 border-t-2 border-r-2 border-gold-500 rounded-full"></div>
+        </div>
+        <h1 class="font-cinzel text-3xl md:text-4xl text-gold-500 tracking-[0.4em] translate-y-2 opacity-0 animate-[fadeUp_1.5s_ease-out_forwards] font-medium">SHOPTUCH</h1>
+        <p class="text-xs tracking-[0.6em] text-gold-400/60 uppercase mt-3 translate-y-2 opacity-0 animate-[fadeUp_1.8s_ease-out_forwards]">Artistry & Precision</p>
+    </div>
+</div>
+
+<!-- Announcement Bar -->
+<div class="bg-gradient-to-r from-gold-900 via-gold-700 to-gold-900 text-[10px] md:text-xs tracking-[0.25em] py-2 px-4 text-center text-gold-100 font-medium relative z-50 flex justify-center items-center gap-2">
+    <span>COMPLIMENTARY WORLDWIDE EXPRESS SHIPPING ON ORDERS OVER $250</span>
+    <span class="hidden md:inline">•</span>
+    <span class="hidden md:inline">EXPERIENCE THE ATELIER SERVICE</span>
+</div>
+
+<!-- Sticky Glass Header -->
+<header class="glass-header sticky top-0 left-0 right-0 z-40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Hamburger Button (Mobile) -->
+        <button id="mobile-menu-btn" class="lg:hidden text-gold-500 hover:text-gold-400 p-2 focus:outline-none focus:ring-2 focus:ring-gold-500/50 rounded-md" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8" aria-label="Main Navigation">
+            <div class="relative group">
+                <a href="#collections" class="font-cinzel tracking-widest text-xs font-semibold py-2 text-gold-500 hover:text-gold-300 transition duration-300 flex items-center gap-1">
+                    COLLECTIONS <i class="fa-solid fa-chevron-down text-[8px] opacity-70"></i>
+                </a>
+                <!-- Mega Menu -->
+                <div class="absolute top-full left-0 mt-2 w-[700px] bg-onyx/95 border border-gold-500/20 rounded-md p-8 shadow-2xl opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 flex gap-8">
+                    <div class="flex-1">
+                        <h4 class="font-cinzel text-gold-500 text-xs tracking-widest border-b border-gold-500/20 pb-2 mb-4 font-semibold">THE ARCHIVES</h4>
+                        <ul class="space-y-3 text-xs tracking-widest text-gray-400">
+                            <li><a href="#couture" class="hover:text-gold-400 transition-colors">Haute Couture Collection</a></li>
+                            <li><a href="#jewelry" class="hover:text-gold-400 transition-colors">High Jewelry Masterpieces</a></li>
+                            <li><a href="#leather" class="hover:text-gold-400 transition-colors">Bespoke Leather Goods</a></li>
+                            <li><a href="#timepieces" class="hover:text-gold-400 transition-colors">Luxury Horology</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-cinzel text-gold-500 text-xs tracking-widest border-b border-gold-500/20 pb-2 mb-4 font-semibold">EXCLUSIVE ATELIER</h4>
+                        <ul class="space-y-3 text-xs tracking-widest text-gray-400">
+                            <li><a href="#bespoke" class="hover:text-gold-400 transition-colors">Private Commissions</a></li>
+                            <li><a href="#heritage" class="hover:text-gold-400 transition-colors">The Heritage Archive</a></li>
+                            <li><a href="#artisans" class="hover:text-gold-400 transition-colors">Meet the Master Artisans</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/3 relative overflow-hidden rounded-md group/img">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=300&q=80" alt="Haute Couture Showcase" class="h-full w-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent flex items-end p-3">
+                            <span class="font-cinzel text-[10px] tracking-widest text-gold-500 font-bold">WINTER COUTURE 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#timepieces" class="font-cinzel tracking-widest text-xs font-semibold py-2 text-gold-500 hover:text-gold-300 transition duration-300">TIMEPIECES</a>
+            <a href="#heritage" class="font-cinzel tracking-widest text-xs font-semibold py-2 text-gold-500 hover:text-gold-300 transition duration-300">HERITAGE</a>
+        </nav>
+
+        <!-- Logo -->
+        <div class="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <a href="/" class="flex flex-col items-center" aria-label="ShopTuch Home">
+                <span class="font-cinzel text-2xl md:text-3xl tracking-[0.35em] text-gold-500 font-semibold text-glow">SHOPTUCH</span>
+                <span class="text-[7px] tracking-[0.5em] text-gold-400/70 uppercase">HAUTE COUTURE</span>
+            </a>
+        </div>
+
+        <!-- Header Action Icons -->
+        <div class="flex items-center space-x-2 md:space-x-4">
+            
+            <!-- Search Trigger -->
+            <button id="search-trigger" class="p-2 text-gold-500 hover:text-gold-300 transition-colors relative" aria-label="Search Collection">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>
+            </button>
+
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle" class="p-2 text-gold-500 hover:text-gold-300 transition-colors" aria-label="Toggle Dark/Light Mode">
+                <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"></path></svg>
+                <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path></svg>
+            </button>
+
+            <!-- Wishlist Icon -->
+            <a href="#wishlist" class="p-2 text-gold-500 hover:text-gold-300 transition-colors relative" aria-label="Wishlist">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path></svg>
+                <span class="absolute top-1 right-1 bg-gold-500 text-onyx font-bold text-[8px] rounded-full h-3.5 w-3.5 flex items-center justify-center">3</span>
+            </a>
+
+            <!-- Cart Button -->
+            <button id="cart-btn" class="p-2 text-gold-500 hover:text-gold-300 transition-colors relative" aria-label="Shopping Cart">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+                <span class="absolute top-1 right-1 bg-gold-500 text-onyx font-bold text-[8px] rounded-full h-3.5 w-3.5 flex items-center justify-center">2</span>
+            </button>
+
+            <!-- Notifications & Profile Dropdown Area -->
+            <div class="relative group hidden sm:inline-block">
+                <button class="p-2 text-gold-500 hover:text-gold-300 transition-colors" aria-label="User Menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path></svg>
+                </button>
+                <!-- Profile Dropdown Menu -->
+                <div class="absolute right-0 mt-2 w-48 bg-onyx border border-gold-500/20 rounded-md py-2 shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+                    <a href="#profile" class="block px-4 py-2 text-xs tracking-widest text-gray-300 hover:bg-gold-500 hover:text-onyx transition-colors">MY ATELIER</a>
+                    <a href="#orders" class="block px-4 py-2 text-xs tracking-widest text-gray-300 hover:bg-gold-500 hover:text-onyx transition-colors">TRACK ORDER</a>
+                    <hr class="border-gold-500/10 my-1">
+                    <button class="w-full text-left px-4 py-2 text-xs tracking-widest text-gold-500 hover:bg-gold-500 hover:text-onyx transition-colors">LOGIN</button>
+                    <button class="w-full text-left px-4 py-2 text-xs tracking-widest text-gold-400/70 hover:bg-gold-500 hover:text-onyx transition-colors">REGISTER</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-drawer" class="fixed inset-y-0 left-0 z-50 w-full max-w-sm bg-onyx/98 border-r border-gold-500/20 shadow-2xl p-6 transition-transform duration-500 -translate-x-full" aria-hidden="true">
+    <div class="flex items-center justify-between border-b border-gold-500/10 pb-6 mb-6">
+        <span class="font-cinzel text-xl tracking-[0.2em] text-gold-500">SHOPTUCH</span>
+        <button id="close-drawer-btn" class="p-2 text-gold-500 hover:text-gold-400" aria-label="Close Drawer">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </div>
+    <nav class="flex flex-col space-y-6" aria-label="Mobile Navigation Drawer">
+        <a href="#collections" class="font-cinzel text-sm tracking-widest text-gold-500 hover:text-gold-300 font-semibold border-b border-gold-500/5 pb-2">COLLECTIONS</a>
+        <a href="#timepieces" class="font-cinzel text-sm tracking-widest text-gold-500 hover:text-gold-300 font-semibold border-b border-gold-500/5 pb-2">TIMEPIECES</a>
+        <a href="#heritage" class="font-cinzel text-sm tracking-widest text-gold-500 hover:text-gold-300 font-semibold border-b border-gold-500/5 pb-2">HERITAGE</a>
+        <a href="#bespoke" class="font-cinzel text-sm tracking-widest text-gold-500 hover:text-gold-300 font-semibold border-b border-gold-500/5 pb-2">BESPOKE SERVICES</a>
+    </nav>
+    <div class="mt-12 pt-6 border-t border-gold-500/10 flex flex-col gap-4">
+        <button class="w-full py-3 border border-gold-500/30 text-gold-500 font-cinzel text-xs tracking-[0.2em] rounded-md hover:bg-gold-500 hover:text-onyx transition-all">LOGIN TO PORTAL</button>
+        <button class="w-full py-3 bg-gold-500 text-onyx font-cinzel text-xs tracking-[0.2em] rounded-md hover:bg-gold-600 transition-all font-semibold">REGISTER ACCREDITATION</button>
+    </div>
+</div>
+
+<!-- Search Overlay -->
+<div id="search-overlay" class="fixed inset-0 z-50 bg-onyx/98 backdrop-blur-md flex flex-col items-center justify-center p-6 opacity-0 pointer-events-none transition-all duration-500">
+    <button id="close-search" class="absolute top-8 right-8 p-3 text-gold-500 hover:text-gold-400" aria-label="Close Search">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+    <div class="w-full max-w-2xl text-center">
+        <h3 class="font-cinzel text-gold-500 tracking-[0.3em] text-xl mb-6">SEARCH THE ATELIER</h3>
+        <form action="/search" method="GET" class="relative">
+            <input type="search" name="q" placeholder="ENTER COLLECTION, PRODUCT, ARTISAN..." class="w-full bg-transparent border-b border-gold-500/30 py-4 px-2 text-center text-gold-100 font-cinzel tracking-widest text-lg md:text-xl focus:outline-none focus:border-gold-500 transition-colors placeholder:text-gold-500/30" required>
+            <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 text-gold-500" aria-label="Submit Search">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg>
+            </button>
+        </form>
+        <div class="mt-8">
+            <span class="text-[10px] tracking-widest text-gold-400/50 block mb-3">POPULAR CONCEPTS</span>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="/search?q=Tourbillon" class="text-xs px-4 py-2 border border-gold-500/10 rounded-full text-gold-500 hover:border-gold-500 hover:text-gold-300 transition-all">Tourbillon Watches</a>
+                <a href="/search?q=Silk" class="text-xs px-4 py-2 border border-gold-500/10 rounded-full text-gold-500 hover:border-gold-500 hover:text-gold-300 transition-all">Silk Haute Couture</a>
+                <a href="/search?q=Vermeil" class="text-xs px-4 py-2 border border-gold-500/10 rounded-full text-gold-500 hover:border-gold-500 hover:text-gold-300 transition-all">Vermeil Gold Jewelry</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Luxury Hero Section -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-onyx py-16 md:py-24" aria-label="Hero Spotlight">
+    
+    <!-- Animated Background & Gradient Blobs -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute top-[10%] left-[-10%] w-[35rem] h-[35rem] bg-gold-900/10 rounded-full filter blur-[100px] animate-pulse"></div>
+        <div class="absolute bottom-[10%] right-[-10%] w-[40rem] h-[40rem] bg-gold-500/5 rounded-full filter blur-[130px] animate-pulse [animation-delay:2s]"></div>
+        <div class="absolute top-1/2 left-1/3 w-[25rem] h-[25rem] bg-gold-700/5 rounded-full filter blur-[80px] animate-pulse [animation-delay:4s]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Left Narrative Column -->
+            <div class="lg:col-span-6 flex flex-col justify-center text-center lg:text-left" data-aos="fade-right" data-aos-duration="1200">
+                
+                <!-- Premium Badge -->
+                <div class="inline-flex items-center justify-center lg:justify-start gap-2 mb-6">
+                    <span class="w-8 h-px bg-gold-500/50"></span>
+                    <span class="text-xs tracking-[0.4em] text-gold-500 font-semibold uppercase">EXQUISITE ATELIER COUTURE</span>
+                    <span class="w-8 h-px bg-gold-500/50"></span>
+                </div>
+
+                <!-- Large Headline -->
+                <h1 class="font-cinzel text-4xl sm:text-5xl lg:text-6xl text-gold-100 tracking-[0.1em] leading-[1.15] mb-6 font-medium">
+                    Crafted to <br class="hidden sm:inline">
+                    <span class="text-gold-500">Perfection</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="font-montserrat text-sm sm:text-base text-gray-400 tracking-wide leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8 font-light">
+                    Step into a realm of bespoke craftsmanship. Each exquisite article is meticulously constructed by highly trained master artisans, embodying the perfect marriage of timeless design and absolute precision.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#categories" class="w-full sm:w-auto text-center px-8 py-4 bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-onyx font-cinzel text-xs tracking-[0.25em] font-extrabold rounded shadow-lg transition-all duration-300 min-w-[200px]" role="button">
+                        DISCOVER ATELIER
+                    </a>
+                    <a href="#heritage" class="w-full sm:w-auto text-center px-8 py-4 border border-gold-500/30 hover:border-gold-500 hover:bg-gold-500/10 text-gold-500 font-cinzel text-xs tracking-[0.25em] font-bold rounded transition-all duration-300 min-w-[200px]" role="button">
+                        THE ARCHIVES
+                    </a>
+                </div>
+
+                <!-- Hero Statistics Snippet -->
+                <div class="grid grid-cols-3 gap-6 mt-12 border-t border-gold-500/10 pt-8 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <span class="block font-cinzel text-xl text-gold-500 font-bold tracking-widest">100%</span>
+                        <span class="text-[9px] tracking-widest text-gray-400 uppercase font-medium">Bespoke Quality</span>
+                    </div>
+                    <div>
+                        <span class="block font-cinzel text-xl text-gold-500 font-bold tracking-widest">85+</span>
+                        <span class="text-[9px] tracking-widest text-gray-400 uppercase font-medium">Master Artisans</span>
+                    </div>
+                    <div>
+                        <span class="block font-cinzel text-xl text-gold-500 font-bold tracking-widest">Limited</span>
+                        <span class="text-[9px] tracking-widest text-gray-400 uppercase font-medium">Unique Editions</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Visual Column (Hero Product Showcase) -->
+            <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left" data-aos-duration="1200">
+                
+                <!-- Floating Cards & Premium Visuals -->
+                <div class="relative w-full max-w-md aspect-[4/5] rounded overflow-hidden gold-border-hover border border-gold-500/10 shadow-2xl">
+                    
+                    <!-- Main Product Hero Image -->
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=800&q=80" alt="Master Chronograph Limited Edition Watch" class="w-full h-full object-cover transition-all duration-700 hover:scale-105">
+
+                    <!-- Floating Glass Card overlay -->
+                    <div class="absolute bottom-6 left-6 right-6 glass-header border border-gold-500/20 p-5 rounded flex items-center justify-between shadow-lg">
+                        <div>
+                            <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-1">CHRONO ARCHIVE</span>
+                            <h3 class="font-cinzel text-sm text-gold-100 tracking-wider">The Sovereign Tourbillon</h3>
+                            <p class="text-xs text-gold-500/80 font-semibold mt-1 font-cinzel">Price Upon Request</p>
+                        </div>
+                        <a href="#contact" class="h-10 w-10 bg-gold-500 hover:bg-gold-400 rounded-full flex items-center justify-center text-onyx transition-colors duration-300" aria-label="Inquire About The Sovereign Tourbillon">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path></svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Ambient Ring underlay -->
+                <div class="absolute -z-10 w-80 h-80 rounded-full border border-gold-500/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110"></div>
+                <div class="absolute -z-10 w-96 h-96 rounded-full border border-gold-500/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-125 animate-subtle-spin"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 opacity-70">
+        <span class="text-[8px] tracking-[0.4em] text-gold-500 uppercase font-semibold">SCROLL DOWN</span>
+        <div class="w-px h-12 bg-gradient-to-b from-gold-500 to-transparent relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-white animate-bounce"></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Statistics Section -->
+<section class="relative bg-onyx py-16 border-y border-gold-500/15" aria-label="Key Performance Indicators">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+            
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="100">
+                <span class="block font-cinzel text-3xl md:text-4xl lg:text-5xl text-gold-500 font-bold tracking-widest text-glow">120K+</span>
+                <span class="block text-[10px] md:text-xs tracking-[0.25em] text-gray-400 uppercase font-semibold">Global Patrons</span>
+            </div>
+
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="200">
+                <span class="block font-cinzel text-3xl md:text-4xl lg:text-5xl text-gold-500 font-bold tracking-widest text-glow">95+</span>
+                <span class="block text-[10px] md:text-xs tracking-[0.25em] text-gray-400 uppercase font-semibold">Bespoke Artifacts</span>
+            </div>
+
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="300">
+                <span class="block font-cinzel text-3xl md:text-4xl lg:text-5xl text-gold-500 font-bold tracking-widest text-glow">42</span>
+                <span class="block text-[10px] md:text-xs tracking-[0.25em] text-gray-400 uppercase font-semibold">Sovereign Countries</span>
+            </div>
+
+            <div class="space-y-2" data-aos="fade-up" data-aos-delay="400">
+                <span class="block font-cinzel text-3xl md:text-4xl lg:text-5xl text-gold-500 font-bold tracking-widest text-glow">10M+</span>
+                <span class="block text-[10px] md:text-xs tracking-[0.25em] text-gray-400 uppercase font-semibold">Prestige Transactions</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Category Section (8 Premium Category Cards) -->
+<section id="categories" class="relative bg-onyx py-24 md:py-32" aria-labelledby="category-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Category Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24" data-aos="fade-up">
+            <span class="text-xs tracking-[0.4em] text-gold-500 font-semibold uppercase block mb-3">CURATED PORTFOLIO</span>
+            <h2 id="category-heading" class="font-cinzel text-3xl md:text-4xl lg:text-5xl text-gold-100 tracking-[0.1em] font-medium mb-6">Explore the Realms</h2>
+            <div class="w-16 h-px bg-gold-500 mx-auto"></div>
+        </div>
+
+        <!-- Category Grid (8 Cards) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            
+            <!-- Card 1: Haute Couture -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="50">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Haute Couture Collection Model" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">01 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Haute Couture</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Individually tailored garments crafted with unparalleled craftsmanship.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE DESIGNS <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 2: High Jewelry -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="High Jewelry Gold Necklace" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">02 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">High Jewelry</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Breathtaking diamonds and precious gems set in precious metals.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE COLLECTION <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 3: Leather Goods -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="150">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Fine Hand-stitched Leather Handbag" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">03 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Leather Goods</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Supple calfskin handbags and mastercrafted leather accessories.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE DESIGNS <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 4: Fine Timepieces -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Exquisite Chronograph Watch" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">04 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Fine Timepieces</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Sophisticated precision horology of heritage Swiss standard.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE MOVEMENTS <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 5: Artisanal Fragrances -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="50">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80" alt="Bespoke Luxury Perfume Bottle" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">05 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Artisanal Fragrances</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Exquisite olfactive harmonies refined with raw luxury essences.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE SCENTS <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 6: Designer Footwear -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Premium Luxury High Heels" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">06 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Designer Footwear</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Stunning statement high-heels and precision-crafted shoes.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE FOOTWEAR <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 7: Maison & Decor -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="150">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Luxury Interior Living Room Decor" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">07 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Maison & Decor</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Exquisite furnishings and artisan accoutrements for upscale living.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE MAISON <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 8: Bespoke Tailoring -->
+            <div class="relative group aspect-[3/4] overflow-hidden rounded gold-border-hover border border-gold-500/10 shadow-lg category-zoom flex flex-col justify-end p-6 md:p-8" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=600&q=80" alt="Master Tailor Suit Fabric Custom Craftsmanship" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent transition-opacity duration-500 group-hover:opacity-90"></div>
+                <div class="relative z-10">
+                    <span class="text-[9px] tracking-[0.3em] text-gold-500 font-bold block mb-2">08 / ARCHIVE</span>
+                    <h3 class="font-cinzel text-lg md:text-xl text-gold-100 tracking-wider mb-2 font-medium">Bespoke Tailoring</h3>
+                    <p class="text-xs text-gray-400 tracking-wide font-light mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Perfect personalized custom fitting from world class tailors.</p>
+                    <span class="text-[10px] tracking-widest text-gold-500 font-bold flex items-center gap-2">
+                        EXPLORE TAILORING <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
