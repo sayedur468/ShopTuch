@@ -192,3 +192,23 @@ window.addEventListener("load",()=>{
     },1000);
 
 });
+/* ==========================================================
+   PART 2B
+   ANNOUNCEMENT BAR
+========================================================== */
+
+const announcementBar =
+document.getElementById("announcementBar");
+
+const announcementClose =
+document.getElementById("announcementClose");
+
+if(announcementClose){
+
+    announcementClose.addEventListener("click",()=>{
+
+        announcementBar.style.display="none";
+
+    });
+
+}
