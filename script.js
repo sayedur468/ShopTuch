@@ -1,37 +1,177 @@
-/* ==========================================================================
-ShopTuch Premium JavaScript Architecture
-Pattern: Module Pattern (Clean Namespace Isolation)
-Performance Optimized: Debounced search, passive listeners, CSS accelerated,
-Intersection Observer for Reveal/Lazy Loading.
-========================================================================== */
+/* ==========================================================
+   ShopTuch Premium E-Commerce Website
+   Part 1D
+   JAVASCRIPT FOUNDATION
+========================================================== */
 
-// ==========================================================================
-// 1. Curated Product Database (Local Data Storage Object)
-// ==========================================================================
-const products = [
-{
-id: 1,
-title: "The Monolith Stand",
-category: "workspace",
-price: 245,
-oldPrice: 290,
-rating: 4.9,
-reviews: 142,
-badge: "NEW",
-image: "images/product1.jpg",
-description: "Meticulously milled from aircraft-grade aerospace aluminum. Elevates your studio workspace to the optimal viewing angle with a design inspired by structural architectures."
-},
-{
-id: 2,
-title: "Aether Studio Monitors",
-category: "audio",
-price: 890,
-oldPrice: 1050,
-rating: 5.0,
-reviews: 89,
-badge: "SALE",
-image: "images/product2.jpg",
-description: "Precision-tuned passive audio drivers encased in premium structural walnut housing. Designed for pristine fidelity, flat acoustic signatures, and clean low frequencies."
-},
-{
-id:
+"use strict";
+
+/*==========================
+      GLOBAL CONFIG
+==========================*/
+
+const APP = {
+    name: "ShopTuch",
+    version: "1.0.0",
+    author: "Sayedur Rahman",
+    currency: "USD",
+    language: "en"
+};
+
+/*==========================
+      DOM SELECTORS
+==========================*/
+
+const $ = (selector) => document.querySelector(selector);
+
+const $$ = (selector) => document.querySelectorAll(selector);
+
+/*==========================
+      DOM READY
+==========================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    console.log(`${APP.name} Loaded Successfully`);
+
+    initAOS();
+
+    initScrollTop();
+
+});
+
+/*==========================
+      AOS INIT
+==========================*/
+
+function initAOS(){
+
+    if(typeof AOS !== "undefined"){
+
+        AOS.init({
+
+            duration:800,
+
+            once:true,
+
+            offset:80
+
+        });
+
+    }
+
+}
+
+/*==========================
+      SCROLL TO TOP
+==========================*/
+
+function initScrollTop(){
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"instant"
+
+    });
+
+}
+
+/*==========================
+      HELPERS
+==========================*/
+
+function addClass(element,className){
+
+    if(element){
+
+        element.classList.add(className);
+
+    }
+
+}
+
+function removeClass(element,className){
+
+    if(element){
+
+        element.classList.remove(className);
+
+    }
+
+}
+
+function toggleClass(element,className){
+
+    if(element){
+
+        element.classList.toggle(className);
+
+    }
+
+}
+
+/*==========================
+      FORMAT PRICE
+==========================*/
+
+function formatPrice(price){
+
+    return `$${Number(price).toFixed(2)}`;
+
+}
+
+/*==========================
+      LOCAL STORAGE
+==========================*/
+
+function saveData(key,value){
+
+    localStorage.setItem(
+
+        key,
+
+        JSON.stringify(value)
+
+    );
+
+}
+
+function loadData(key){
+
+    const data = localStorage.getItem(key);
+
+    return data ? JSON.parse(data) : null;
+
+}
+
+/*==========================
+      ERROR HANDLER
+==========================*/
+
+window.onerror=function(message,file,line){
+
+    console.error(
+
+        "Error:",
+
+        message,
+
+        file,
+
+        line
+
+    );
+
+};
+
+/*==========================
+      WINDOW LOAD
+==========================*/
+
+window.addEventListener("load",()=>{
+
+    console.log("All Assets Loaded");
+
+});
