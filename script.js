@@ -244,3 +244,83 @@ mobileMenuBtn.addEventListener("click",()=>{
 mobileClose.addEventListener("click",closeMobileMenu);
 
 mobileOverlay.addEventListener("click",closeMobileMenu);
+/* ==========================================================
+   PART 3B-3
+   HERO SWIPER
+========================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    if (typeof Swiper !== "undefined") {
+
+        new Swiper(".heroSwiper", {
+
+            loop: true,
+
+            speed: 800,
+
+            spaceBetween: 20,
+
+            grabCursor: true,
+
+            centeredSlides: true,
+
+            autoplay: {
+
+                delay: 4000,
+
+                disableOnInteraction: false,
+
+                pauseOnMouseEnter: true
+
+            },
+
+            pagination: {
+
+                el: ".swiper-pagination",
+
+                clickable: true
+
+            },
+
+            navigation: {
+
+                nextEl: ".swiper-button-next",
+
+                prevEl: ".swiper-button-prev"
+
+            },
+
+            keyboard: {
+
+                enabled: true
+
+            },
+
+            breakpoints: {
+
+                0: {
+
+                    slidesPerView: 1
+
+                },
+
+                768: {
+
+                    slidesPerView: 1
+
+                },
+
+                1200: {
+
+                    slidesPerView: 1
+
+                }
+
+            }
+
+        });
+
+    }
+
+});
