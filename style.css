@@ -1203,3 +1203,82 @@ font-size:28px;
     }
 
 }
+
+/* ==========================================================
+   PART 3A
+   HEADER RESPONSIVE UPGRADE
+========================================================== */
+
+.mobile-search-btn{
+
+    display:none;
+
+}
+
+@media(max-width:992px){
+
+.header-wrapper{
+
+display:grid;
+
+grid-template-columns:48px 1fr auto;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo{
+
+justify-self:center;
+
+font-size:30px;
+
+}
+
+.header-search{
+
+display:none;
+
+}
+
+.mobile-search-btn{
+
+display:flex;
+
+}
+
+.header-icons{
+
+gap:8px;
+
+}
+
+.icon-btn{
+
+width:42px;
+
+height:42px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.logo{
+
+font-size:26px;
+
+}
+
+.icon-btn{
+
+width:40px;
+
+height:40px;
+
+}
+
+}
