@@ -1282,3 +1282,210 @@ height:40px;
 }
 
 }
+
+/* ==========================================================
+   PART 3B-2
+   HERO SECTION
+========================================================== */
+
+/*==========================
+      HERO
+==========================*/
+
+.hero{
+
+    padding:20px 0 40px;
+
+    background:var(--section-bg);
+
+}
+
+.heroSwiper{
+
+    width:100%;
+
+}
+
+.hero .swiper-slide{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.hero .swiper-slide img{
+
+    width:100%;
+
+    height:650px;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.hero .swiper-slide:hover img{
+
+    transform:scale(1.03);
+
+}
+
+/*==========================
+      SWIPER BUTTON
+==========================*/
+
+.hero .swiper-button-next,
+.hero .swiper-button-prev{
+
+    width:50px;
+
+    height:50px;
+
+    background:#ffffff;
+
+    border-radius:50%;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.hero .swiper-button-next:hover,
+.hero .swiper-button-prev:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+}
+
+.hero .swiper-button-next::after,
+.hero .swiper-button-prev::after{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/*==========================
+      PAGINATION
+==========================*/
+
+.hero .swiper-pagination{
+
+    bottom:20px !important;
+
+}
+
+.hero .swiper-pagination-bullet{
+
+    width:12px;
+
+    height:12px;
+
+    background:#ffffff;
+
+    opacity:1;
+
+}
+
+.hero .swiper-pagination-bullet-active{
+
+    width:32px;
+
+    border-radius:30px;
+
+    background:var(--primary);
+
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:1200px){
+
+.hero .swiper-slide img{
+
+height:560px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.hero{
+
+padding:15px 0 30px;
+
+}
+
+.hero .swiper-slide img{
+
+height:450px;
+
+}
+
+.hero .swiper-button-next,
+.hero .swiper-button-prev{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero .swiper-slide{
+
+border-radius:14px;
+
+}
+
+.hero .swiper-slide img{
+
+height:300px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+padding:10px 0 20px;
+
+}
+
+.hero .swiper-slide img{
+
+height:220px;
+
+}
+
+.hero .swiper-pagination-bullet{
+
+width:10px;
+
+height:10px;
+
+}
+
+.hero .swiper-pagination-bullet-active{
+
+width:24px;
+
+}
+
+}
