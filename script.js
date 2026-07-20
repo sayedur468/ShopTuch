@@ -212,3 +212,35 @@ if(announcementClose){
     });
 
 }
+/* ==========================================================
+   PART 2E
+   MOBILE NAVIGATION
+========================================================== */
+
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+
+const mobileNav = document.getElementById("mobileNav");
+
+const mobileClose = document.getElementById("mobileClose");
+
+const mobileOverlay = document.getElementById("mobileOverlay");
+
+function closeMobileMenu(){
+
+    mobileNav.classList.remove("active");
+
+    mobileOverlay.classList.remove("active");
+
+}
+
+mobileMenuBtn.addEventListener("click",()=>{
+
+    mobileNav.classList.add("active");
+
+    mobileOverlay.classList.add("active");
+
+});
+
+mobileClose.addEventListener("click",closeMobileMenu);
+
+mobileOverlay.addEventListener("click",closeMobileMenu);
