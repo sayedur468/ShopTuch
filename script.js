@@ -175,3 +175,20 @@ window.addEventListener("load",()=>{
     console.log("All Assets Loaded");
 
 });
+
+/* ==========================================================
+   PART 2A
+   LOADING SCREEN
+========================================================== */
+
+const loader = document.getElementById("loader");
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        loader.classList.add("hide");
+
+    },1000);
+
+});
