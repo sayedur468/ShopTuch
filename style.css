@@ -1079,3 +1079,127 @@ font-size:28px;
     }
 
 }
+/* ==========================================================
+   PART 2E
+   MOBILE NAVIGATION
+========================================================== */
+
+.mobile-menu-btn{
+
+    display:none;
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:18px;
+
+}
+
+.mobile-nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:-320px;
+
+    width:300px;
+
+    height:100vh;
+
+    background:#fff;
+
+    padding:25px;
+
+    transition:.35s;
+
+    z-index:9999;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.15);
+
+}
+
+.mobile-nav.active{
+
+    left:0;
+
+}
+
+.mobile-close{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--gray-100);
+
+    margin-bottom:25px;
+
+}
+
+.mobile-nav ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.mobile-nav a{
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.mobile-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9998;
+
+}
+
+.mobile-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+@media(max-width:992px){
+
+    .mobile-menu-btn{
+
+        display:flex;
+
+    }
+
+}
