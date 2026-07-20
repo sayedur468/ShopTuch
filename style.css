@@ -1489,3 +1489,95 @@ width:24px;
 }
 
 }
+/* ==========================================================
+   PART 3C
+   STATISTICS
+========================================================== */
+
+.stats{
+
+    padding:70px 0;
+
+    background:#ffffff;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:#ffffff;
+
+    border:1px solid var(--gray-200);
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.stat-card i{
+
+    font-size:38px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.stat-card h3{
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:var(--gray-700);
+
+}
+
+@media(max-width:992px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:576px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
