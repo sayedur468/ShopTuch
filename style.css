@@ -220,3 +220,313 @@ section{
     width:min(100% - 30px,var(--container));
     margin-inline:auto;
 }
+/* ==========================================================
+   ShopTuch Premium E-Commerce Website
+   Part 1C
+   UTILITIES & GLOBAL COMPONENTS
+========================================================== */
+
+/*==========================
+      UTILITIES
+==========================*/
+
+.hidden{
+    display:none !important;
+}
+
+.show{
+    display:block !important;
+}
+
+.flex{
+    display:flex;
+}
+
+.grid{
+    display:grid;
+}
+
+.flex-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.flex-between{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.w-100{
+    width:100%;
+}
+
+.h-100{
+    height:100%;
+}
+
+/*==========================
+      BUTTONS
+==========================*/
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.6rem;
+
+    padding:14px 28px;
+
+    border-radius:var(--radius-md);
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+}
+
+.btn-primary{
+
+    background:var(--primary);
+    color:#fff;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-hover);
+    transform:translateY(-2px);
+
+}
+
+.btn-outline{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==========================
+      SECTION TITLE
+==========================*/
+
+.section-title{
+
+    margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+    font-size:2.2rem;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    max-width:650px;
+
+    color:var(--gray-700);
+
+}
+
+/*==========================
+      GRID
+==========================*/
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/*==========================
+      SCROLLBAR
+==========================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f3f4f6;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/*==========================
+      TEXT SELECTION
+==========================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==========================
+      COMMON ANIMATION
+==========================*/
+
+.fade-up{
+
+    animation:fadeUp .6s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+      RESPONSIVE
+==========================*/
+
+@media(max-width:1200px){
+
+.grid-4{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media(max-width:992px){
+
+.grid-4,
+.grid-3{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+width:min(100% - 20px,var(--container));
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+h1{
+
+font-size:2.2rem;
+
+}
+
+h2{
+
+font-size:1.8rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.grid-4,
+.grid-3,
+.grid-2{
+
+grid-template-columns:1fr;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+}
